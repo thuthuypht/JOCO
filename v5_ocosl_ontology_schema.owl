@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#fromDataset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">fromDataset</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#Image"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#Dataset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#wearing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">wearing</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#Person"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#Clothing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#overlaps">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">overlaps</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#standingOn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">standingOn</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#Person"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#PhysicalObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Label_cell_phone">
+    <rdf:type rdf:resource="http://example.org/coco-ontology#SemanticFact"/>
+    <rdfs:label xml:lang="en">cell phone</rdfs:label>
+    <skos:altLabel xml:lang="en">mobile phone</skos:altLabel>
+    <skos:altLabel xml:lang="en">phone</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#hasBoundingBox">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">hasBoundingBox</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Image">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Image</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#behind">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">behind</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <owl:inverseOf rdf:resource="http://example.org/coco-ontology#inFrontOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#insideOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">insideOf</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#isOn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">isOn</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Label_person">
+    <rdf:type rdf:resource="http://example.org/coco-ontology#SemanticFact"/>
+    <rdfs:label xml:lang="en">person</rdfs:label>
+    <skos:altLabel xml:lang="en">man</skos:altLabel>
+    <skos:altLabel xml:lang="en">woman</skos:altLabel>
+    <skos:altLabel xml:lang="en">boy</skos:altLabel>
+    <skos:altLabel xml:lang="en">girl</skos:altLabel>
+    <skos:altLabel xml:lang="en">people</skos:altLabel>
+    <skos:altLabel xml:lang="en">human</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Label_motorcycle">
+    <rdf:type rdf:resource="http://example.org/coco-ontology#SemanticFact"/>
+    <rdfs:label xml:lang="en">motorcycle</rdfs:label>
+    <skos:altLabel xml:lang="en">motorbike</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Person</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/coco-ontology#PhysicalObject"/>
+    <owl:disjointWith rdf:resource="http://example.org/coco-ontology#Vehicle"/>
+    <owl:disjointWith rdf:resource="http://example.org/coco-ontology#ElectronicDevice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Clothing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Clothing</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/coco-ontology#PhysicalObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#near">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">near</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Dataset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Dataset</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#isBelow">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">isBelow</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <owl:inverseOf rdf:resource="http://example.org/coco-ontology#isAbove"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#IndoorScene">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">IndoorScene</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/coco-ontology#Scene"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#imagePath">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">imagePath</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#Image"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#imageID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">imageID</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#Image"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Label_bicycle">
+    <rdf:type rdf:resource="http://example.org/coco-ontology#SemanticFact"/>
+    <rdfs:label xml:lang="en">bicycle</rdfs:label>
+    <skos:altLabel xml:lang="en">bike</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Label_sofa">
+    <rdf:type rdf:resource="http://example.org/coco-ontology#SemanticFact"/>
+    <rdfs:label xml:lang="en">sofa</rdfs:label>
+    <skos:altLabel xml:lang="en">couch</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#rightOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">rightOf</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <owl:inverseOf rdf:resource="http://example.org/coco-ontology#leftOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Scene">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Scene</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#objectFromDataset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">objectFromDataset</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#Dataset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#hasSize">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">hasSize</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#SportsEquipment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">SportsEquipment</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/coco-ontology#PhysicalObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#supports">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">supports</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <owl:inverseOf rdf:resource="http://example.org/coco-ontology#isOn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#PhysicalObject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">PhysicalObject</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#interactsWith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">interactsWith</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Container">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Container</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/coco-ontology#PhysicalObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Animal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Animal</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/coco-ontology#PhysicalObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#inFrontOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">inFrontOf</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#isAbove">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">isAbove</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Tool">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Tool</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/coco-ontology#PhysicalObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#hasProbability">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">hasProbability</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Food">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Food</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/coco-ontology#PhysicalObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#DetectedObject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">DetectedObject</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#hasObject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">hasObject</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#Image"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#contains">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">contains</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <owl:inverseOf rdf:resource="http://example.org/coco-ontology#insideOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Label_tv">
+    <rdf:type rdf:resource="http://example.org/coco-ontology#SemanticFact"/>
+    <rdfs:label xml:lang="en">tv</rdfs:label>
+    <skos:altLabel xml:lang="en">television</skos:altLabel>
+    <skos:altLabel xml:lang="en">monitor</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Person_disjoint_Vehicle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Vehicle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Vehicle</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/coco-ontology#PhysicalObject"/>
+    <owl:disjointWith rdf:resource="http://example.org/coco-ontology#Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Furniture">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Furniture</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/coco-ontology#PhysicalObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#RelationAssertion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">RelationAssertion</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#riding">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">riding</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#Person"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#PhysicalObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#hasLabelText">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">hasLabelText</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#COCO">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">MS COCO</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/coco-ontology#Dataset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#OutdoorScene">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">OutdoorScene</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/coco-ontology#Scene"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#SemanticFact">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">SemanticFact</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#UrbanScene">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">UrbanScene</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/coco-ontology#Scene"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#leftOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">leftOf</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#OpenImages">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Open Images</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/coco-ontology#Dataset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#isHolding">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">isHolding</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#Person"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#PhysicalObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#sittingOn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">sittingOn</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#Person"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#PhysicalObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#ElectronicDevice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">ElectronicDevice</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/coco-ontology#PhysicalObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#isInScene">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">isInScene</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://example.org/coco-ontology#Scene"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Person_disjoint_ElectronicDevice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#VisualGenome">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Visual Genome</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/coco-ontology#Dataset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label xml:lang="en">OCOSL Ontology Schema (COCO + Visual Genome + OpenImages)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#hasColor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">hasColor</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/coco-ontology#DetectedObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/coco-ontology#Vehicle_disjoint_Animal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+</rdf:RDF>
