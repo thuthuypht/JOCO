@@ -12,7 +12,7 @@ This repository supports the revised manuscript **“Ontology-Constrained Combin
 - `configs/final_reported_config.yaml` — reported base and RelTR-V3 settings.
 - `experiments/` — Visual Genome manifest builder, statistical analysis, fallback summarizer and dense-scene stress test.
 - `manifests/oi300_ids.txt` — exact 300 Open Images IDs represented in the final RelTR-V3 output.
-- `results/` — final RelTR-V3 outputs plus a checklist of experimental outputs that still require actual runs.
+- `results/` — final RelTR-V3 outputs plus a checklist of experimental outputs.
 
 ## RelTR V3 stronger-generator experiment
 
