@@ -118,8 +118,9 @@ def _components(objects, rel_cands):
     return comps
 
 def solve_ilp_hierarchy(objects, rel_cands, rel_type_constraints, label_compatible,
-                        alpha=0.40, beta=0.30, gamma=0.20, lambda_conflict=0.10,
-                        time_limit_s=10, rel_budget=0, disjoint_pairs=None, msg=False):
+                        alpha=0.40, beta=0.30, gamma=0.20, lambda_conflict=0.0,
+                        time_limit_s=10, rel_budget=0, disjoint_pairs=None,
+                        gap_rel=1.0e-4, msg=False):
     import pulp
     prob = pulp.LpProblem("OCOSL_HierarchyAware", pulp.LpMaximize)
     x={}
@@ -172,11 +173,11 @@ def solve_ilp_hierarchy(objects, rel_cands, rel_type_constraints, label_compatib
     score={(r.i,r.j,r.rel):float(r.score) for r in rel_cands if r.feasible}
     for k,var in y.items():
         terms.append(gamma*score.get(k,0.0)*var)
-    # In hard-constraint mode Phi_conflict=0 for accepted feasible assignments,
-    # so lambda_conflict is retained for correspondence with the formulation.
+    # Conflicts are hard feasibility constraints in the clean rerun.
+    # Therefore no additional soft conflict penalty is active.
     prob += pulp.lpSum(terms)
 
-    solver=pulp.PULP_CBC_CMD(msg=msg,timeLimit=int(time_limit_s))
+    solver=pulp.PULP_CBC_CMD(msg=msg, timeLimit=int(time_limit_s), gapRel=float(gap_rel))
     prob.solve(solver)
     status=pulp.LpStatus.get(prob.status,str(prob.status))
     x_star={(i,l):int((pulp.value(v) or 0)>0.5) for (i,l),v in x.items()}
@@ -203,12 +204,13 @@ def deterministic_repair(objects, rel_cands, rel_type_constraints, label_compati
     return x,y
 
 def solve_with_decomposition_repair(objects, rel_cands, rel_type_constraints, label_compatible,
-                                    alpha=0.40,beta=0.30,gamma=0.20,lambda_conflict=0.10,
-                                    time_limit_s=10,rel_budget=0,disjoint_pairs=None):
+                                    alpha=0.40,beta=0.30,gamma=0.20,lambda_conflict=0.0,
+                                    time_limit_s=10,rel_budget=0,disjoint_pairs=None,
+                                    gap_rel=1.0e-4):
     start=time.perf_counter()
     try:
         x,y,status,obj=solve_ilp_hierarchy(objects,rel_cands,rel_type_constraints,label_compatible,
-            alpha,beta,gamma,lambda_conflict,time_limit_s,rel_budget,disjoint_pairs)
+            alpha,beta,gamma,lambda_conflict,time_limit_s,rel_budget,disjoint_pairs,gap_rel)
         solve_dt=time.perf_counter()-start
         if status=="Optimal":
             return x,y,FallbackLog(status,"none",False,solve_dt,0.0,solve_dt,1,obj)
@@ -224,7 +226,7 @@ def solve_with_decomposition_repair(objects, rel_cands, rel_type_constraints, la
         c_rels=[r for r in rel_cands if r.i in s and r.j in s]
         try:
             cx,cy,cs,_=solve_ilp_hierarchy(c_objs,c_rels,rel_type_constraints,label_compatible,
-                alpha,beta,gamma,lambda_conflict,max(1,int(time_limit_s/max(1,len(comps)))),0,disjoint_pairs)
+                alpha,beta,gamma,lambda_conflict,max(1,int(time_limit_s/max(1,len(comps)))),0,disjoint_pairs,gap_rel)
             if cs!="Optimal": raise RuntimeError(cs)
         except Exception:
             cx,cy=deterministic_repair(c_objs,c_rels,rel_type_constraints,label_compatible,
@@ -240,3 +242,46 @@ def solve_with_decomposition_repair(objects, rel_cands, rel_type_constraints, la
     repair_dt=time.perf_counter()-repair_start
     total=time.perf_counter()-start
     return x_all,y_all,FallbackLog("FallbackRepaired",trigger,True,solve_dt,repair_dt,total,len(comps),None)
+
+
+def instance_statistics(objects, rel_cands, rel_type_constraints, label_compatible,
+                        rel_budget=0, disjoint_pairs=None):
+    """Count binary variables and instantiated hard constraints without solving."""
+    disjoint_pairs = disjoint_pairs or set()
+    label_vars = sum(len(o.candidates) for o in objects)
+    feasible_rels = [r for r in rel_cands if r.feasible]
+    relation_vars = len(feasible_rels)
+
+    constraints = len(objects)  # exactly-one label
+    for o in objects:
+        labels = [lbl for lbl, _ in o.candidates]
+        for a in range(len(labels)):
+            for b in range(a + 1, len(labels)):
+                if frozenset((labels[a], labels[b])) in disjoint_pairs:
+                    constraints += 1
+
+    if relation_vars:
+        constraints += 1  # global relation budget
+    constraints += len({(r.i, r.j) for r in feasible_rels})  # <=1 relation/pair
+
+    domain_constraints = 0
+    range_constraints = 0
+    for r in feasible_rels:
+        dom, ran = rel_type_constraints.get(r.rel, (None, None))
+        if dom not in (None, "DetectedObject"):
+            domain_constraints += 1
+        if ran not in (None, "DetectedObject"):
+            range_constraints += 1
+    constraints += domain_constraints + range_constraints
+
+    budget = rel_budget if rel_budget > 0 else max(1, 2 * len(objects))
+    return {
+        "n_objects": int(len(objects)),
+        "n_label_variables": int(label_vars),
+        "n_relation_variables": int(relation_vars),
+        "n_binary_variables": int(label_vars + relation_vars),
+        "n_constraints": int(constraints),
+        "n_domain_constraints": int(domain_constraints),
+        "n_range_constraints": int(range_constraints),
+        "relation_budget": int(budget),
+    }
