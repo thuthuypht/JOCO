@@ -1,0 +1,41 @@
+{
+  "experiment": "OI-trained RelTR + hierarchy-aware OCOSL V3",
+  "n_images": 10,
+  "implementation_change": "Domain/range compatibility now follows rdfs:subClassOf transitive closure instead of flat label_to_type equality.",
+  "ontology_changed": false,
+  "thresholds_changed": false,
+  "weights_changed": false,
+  "relation_budget_changed": false,
+  "evaluation_iou": 0.5,
+  "reltr_only_shared_pool": {
+    "TP": 19,
+    "FP": 18,
+    "FN": 34,
+    "Precision": 0.5135135135135135,
+    "Recall": 0.3584905660377358,
+    "F1": 0.42222222222222217
+  },
+  "reltr_plus_ocosl_v3": {
+    "TP": 19,
+    "FP": 18,
+    "FN": 34,
+    "Precision": 0.5135135135135135,
+    "Recall": 0.3584905660377358,
+    "F1": 0.42222222222222217
+  },
+  "micro_f1_gain": 0.0,
+  "reltr_mean_image_f1_ci95": [
+    0.20935672514619882,
+    0.6141228070175436
+  ],
+  "ocosl_mean_image_f1_ci95": [
+    0.20935672514619882,
+    0.6141228070175436
+  ],
+  "paired_permutation_pvalue": 1.0,
+  "per_image_improved": 0,
+  "per_image_equal": 10,
+  "per_image_worse": 0,
+  "fallback_count": 0,
+  "avg_solver_time_s": 0.006428289413452149
+}

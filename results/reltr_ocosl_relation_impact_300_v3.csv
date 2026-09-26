@@ -1,0 +1,4 @@
+relation,removed_total,removed_true_positive,removed_false_positive,added_total,added_true_positive,added_false_positive
+wears,2,1,1,0,0,0
+ride,1,1,0,0,0,0
+interacts_with,0,0,0,1,1,0

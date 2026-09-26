@@ -1,0 +1,65 @@
+{
+  "experiment": "OI-trained RelTR vs hierarchy-aware OCOSL V3",
+  "n_requested": 300,
+  "n_completed": 300,
+  "implementation_change": "Ontology domain/range compatibility uses rdfs:subClassOf transitive closure rather than flat label_to_type equality.",
+  "ontology_changed": false,
+  "query_threshold": 0.15,
+  "joint_score_threshold": 0.05,
+  "reltr_topk": 50,
+  "entity_merge_iou": 0.7,
+  "evaluation_iou": 0.5,
+  "relation_budget": "2n",
+  "seed": 42,
+  "time_limit_s": 10,
+  "alpha": 0.4,
+  "beta": 0.3,
+  "gamma": 0.2,
+  "raw_oi_reltr": {
+    "TP": 595,
+    "FP": 1172,
+    "FN": 272,
+    "Precision": 0.33672891907187325,
+    "Recall": 0.6862745098039216,
+    "F1": 0.45178435839028097
+  },
+  "reltr_only_shared_pool": {
+    "TP": 396,
+    "FP": 462,
+    "FN": 471,
+    "Precision": 0.46153846153846156,
+    "Recall": 0.45674740484429066,
+    "F1": 0.4591304347826087
+  },
+  "reltr_plus_ocosl_v3": {
+    "TP": 395,
+    "FP": 461,
+    "FN": 472,
+    "Precision": 0.4614485981308411,
+    "Recall": 0.4555940023068051,
+    "F1": 0.45850261172373763
+  },
+  "micro_f1_gain": -0.0006278230588710465,
+  "reltr_mean_image_f1_ci95": [
+    0.4774134213007278,
+    0.5536623820415809
+  ],
+  "ocosl_mean_image_f1_ci95": [
+    0.4775028794331812,
+    0.5540590030246957
+  ],
+  "paired_permutation_pvalue": 1.0,
+  "per_image_improved": 1,
+  "per_image_equal": 298,
+  "per_image_worse": 1,
+  "fallback_count": 0,
+  "avg_candidate_pool": 3.013333333333333,
+  "avg_entities": 4.033333333333333,
+  "avg_generator_time_s": 0.12915339390436809,
+  "avg_solver_time_s": 0.006401394208272298,
+  "canonicalized_endpoint_count": 1542,
+  "relations_removed_total": 3,
+  "true_positives_removed_total": 2,
+  "relations_added_total": 1,
+  "true_positives_added_total": 1
+}

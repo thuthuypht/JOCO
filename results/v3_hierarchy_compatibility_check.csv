@@ -1,0 +1,6 @@
+label,required_type,compatible
+Person,Person,True
+Boat,Vehicle,True
+Glasses,Clothing,True
+Boat,PhysicalObject,True
+Glasses,PhysicalObject,True

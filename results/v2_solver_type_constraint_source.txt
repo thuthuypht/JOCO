@@ -1,0 +1,163 @@
+
+================================================================================
+solve_ilp
+================================================================================
+def solve_ilp(objects: List[DetObj],
+              rel_cands: List[RelCand],
+              rel_type_constraints: Dict[str, Tuple[Optional[str], Optional[str]]],
+              synonym_map: Dict[str, str],
+              type_map: Dict[str, str],
+              alpha=1.0, beta=1.0, gamma=0.5,
+              time_limit_s: int = 10,
+              rel_budget: int = 0):
+    """
+    Exact ILP for Algorithm 1.
+    rel_budget: if >0, enforce sum(y) <= rel_budget.
+    """
+    try:
+        import pulp
+    except Exception as e:
+        raise RuntimeError("PuLP is required (pip install pulp)") from e
+
+    prob = pulp.LpProblem("OCOSL_Labeling", pulp.LpMaximize)
+
+    # x_{i,l}
+    x = {}
+    for o in objects:
+        for lbl, _ in o.candidates:
+            x[(o.idx, lbl)] = pulp.LpVariable(f"x_{o.idx}_{lbl.replace(' ', '_')}", 0, 1, cat=pulp.LpBinary)
+
+    # One-label-per-object
+    for o in objects:
+        prob += pulp.lpSum([x[(o.idx, lbl)] for lbl, _ in o.candidates]) == 1, f"one_label_{o.idx}"
+
+    # y_{ijr}
+    y = {}
+    for rc in rel_cands:
+        if not rc.feasible:
+            continue
+        key = (rc.i, rc.j, rc.rel)
+        y[key] = pulp.LpVariable(f"y_{rc.i}_{rc.j}_{rc.rel}", 0, 1, cat=pulp.LpBinary)
+
+    # Global relation budget sum(y) <= C
+    if rel_budget and len(y) > 0:
+        prob += pulp.lpSum([v for v in y.values()]) <= int(rel_budget), "global_relation_budget"
+
+    # At most one relation per pair
+    pairs = {}
+    for (i, j, r) in y.keys():
+        pairs.setdefault((i, j), []).append((i, j, r))
+    for (i, j), keys in pairs.items():
+        prob += pulp.lpSum([y[k] for k in keys]) <= 1, f"one_rel_{i}_{j}"
+
+    # Domain-range constraints
+    # NOTE: spatial relations often have generic domain/range like 'DetectedObject'.
+    # We treat 'DetectedObject' as unconstrained because our type map uses Person/Vehicle/.../PhysicalObject.
+    for (i, j, r), var in y.items():
+        dom, ran = rel_type_constraints.get(r, (None, None))
+
+        if dom in (None, "DetectedObject"):
+            dom = None
+        if ran in (None, "DetectedObject"):
+            ran = None
+
+        if dom:
+            prob += var <= pulp.lpSum([x[(i, lbl)] for lbl, _ in objects[i].candidates
+                                       if label_to_type(lbl, synonym_map, type_map) == dom]), f"dom_{i}_{j}_{r}"
+        if ran:
+            prob += var <= pulp.lpSum([x[(j, lbl)] for lbl, _ in objects[j].candidates
+                                       if (ran == "PhysicalObject") or (label_to_type(lbl, synonym_map, type_map) == ran)]), f"ran_{i}_{j}_{r}"
+
+    # Objective
+    obj_terms = []
+    for o in objects:
+        for lbl, sdet in o.candidates:
+            sonto = o.onto_scores.get(lbl, sdet)
+            obj_terms.append((alpha * sdet + beta * sonto) * x[(o.idx, lbl)])
+
+    rel_score_map = {(rc.i, rc.j, rc.rel): rc.score for rc in rel_cands if rc.feasible}
+    for (i, j, r), var in y.items():
+        obj_terms.append(gamma * rel_score_map.get((i, j, r), 0.0) * var)
+
+    prob += pulp.lpSum(obj_terms)
+
+    solver = pulp.PULP_CBC_CMD(msg=False, timeLimit=time_limit_s)
+    prob.solve(solver)
+    status_str = pulp.LpStatus.get(prob.status, str(prob.status))
+
+    x_star = {(i, lbl): int(pulp.value(var) > 0.5) for (i, lbl), var in x.items()}
+    y_star = {(i, j, r): int(pulp.value(var) > 0.5) for (i, j, r), var in y.items()}
+    used_fallback = status_str != "Optimal"
+    return x_star, y_star, status_str, used_fallback
+
+
+================================================================================
+greedy_repair
+================================================================================
+def greedy_repair(objects: List[DetObj],
+                  rel_cands: List[RelCand],
+                  rel_type_constraints: Dict[str, Tuple[Optional[str], Optional[str]]],
+                  synonym_map: Dict[str, str],
+                  type_map: Dict[str, str]):
+    """
+    Fallback solution:
+    - pick best label per object
+    - add best feasible relation per pair (optional)
+    """
+    x_star = {}
+    chosen = {}
+    for o in objects:
+        best_lbl = None
+        best_val = -1e9
+        for lbl, sdet in o.candidates:
+            val = sdet + o.onto_scores.get(lbl, 0.0)
+            if val > best_val:
+                best_val = val
+                best_lbl = lbl
+        chosen[o.idx] = best_lbl
+        for lbl, _ in o.candidates:
+            x_star[(o.idx, lbl)] = 1 if lbl == best_lbl else 0
+
+    y_star = {}
+    seen_pairs = set()
+    for rc in sorted([r for r in rel_cands if r.feasible], key=lambda z: z.score, reverse=True):
+        if (rc.i, rc.j) in seen_pairs:
+            continue
+        dom, ran = rel_type_constraints.get(rc.rel, (None, None))
+        li = chosen.get(rc.i)
+        lj = chosen.get(rc.j)
+
+        if dom and dom != "DetectedObject" and label_to_type(li, synonym_map, type_map) != dom:
+            continue
+        if ran and ran not in ("DetectedObject", "PhysicalObject") and label_to_type(lj, synonym_map, type_map) != ran:
+            continue
+
+        y_star[(rc.i, rc.j, rc.rel)] = 1
+        seen_pairs.add((rc.i, rc.j))
+    return x_star, y_star
+
+
+================================================================================
+build_relation_type_constraints
+================================================================================
+def build_relation_type_constraints(g: Graph, base: Namespace):
+    """
+    Read rdfs:domain/rdfs:range constraints from ontology schema.
+    Returns dict: rel_localname -> (domain_localname, range_localname)
+    """
+    rel_constraints: Dict[str, Tuple[Optional[str], Optional[str]]] = {}
+    for rel in g.subjects(RDF.type, OWL.ObjectProperty):
+        if not str(rel).startswith(str(base)):
+            continue
+        dn = next(g.objects(rel, RDFS.domain), None)
+        rn = next(g.objects(rel, RDFS.range), None)
+        if dn is None and rn is None:
+            continue
+        rel_constraints[_localname(rel)] = (_localname(dn) if dn else None, _localname(rn) if rn else None)
+    return rel_constraints
+
+
+================================================================================
+DEFAULT_TYPE_MAP
+================================================================================
+{'person': 'Person', 'man': 'Person', 'woman': 'Person', 'boy': 'Person', 'girl': 'Person', 'dog': 'Animal', 'cat': 'Animal', 'horse': 'Animal', 'car': 'Vehicle', 'bus': 'Vehicle', 'truck': 'Vehicle', 'bicycle': 'Vehicle', 'motorcycle': 'Vehicle', 'tie': 'Clothing', 'shirt': 'Clothing', 'jacket': 'Clothing', 'pants': 'Clothing', 'dress': 'Clothing', 'shoe': 'Clothing', 'sofa': 'Furniture', 'couch': 'Furniture', 'chair': 'Furniture', 'bed': 'Furniture', 'table': 'Furniture', 'tv': 'ElectronicDevice', 'laptop': 'ElectronicDevice', 'cell phone': 'ElectronicDevice', 'phone': 'ElectronicDevice', 'bowl': 'Container', 'cup': 'Container', 'bottle': 'Container'}
