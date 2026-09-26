@@ -1,0 +1,150 @@
+{
+  "JOCO_RelTR_OCOSL_V3_300_results.ipynb": {
+    "sha256": "561f3d3048941bb0f62992cc9ca61f52378af88305cad3ade3ea9fac5dba026e",
+    "bytes": 4505
+  },
+  "JOCO_verified_ontology_schema_fixed.owl": {
+    "sha256": "3f8adaabff30f83f02b53b5a728dbe6f8b2133baea9b9b38aa31279b00f1769b",
+    "bytes": 93695
+  },
+  "README.md": {
+    "sha256": "affe03e3be561ddddf46fddadf3654b0b12304f2c58c7b8227366d327bef89f9",
+    "bytes": 3583
+  },
+  "README_REVIEWER_ARTIFACTS.md": {
+    "sha256": "14fbdfedba8457990997d94568e6bf839a7b69620dc990e5d745ed6998096f79",
+    "bytes": 991
+  },
+  "UPLOAD_ORDER.txt": {
+    "sha256": "3ddaaf36c3cf851e9ea3cdcbbdd232bfb68a54234ba07f4c02d6284bc1a4fc19",
+    "bytes": 641
+  },
+  "__pycache__/ocosl_run_final.cpython-313.pyc": {
+    "sha256": "3bda8a54b798b85ed0df963e3153ac4998a7be9d8bcd3f401add62f23ca032b5",
+    "bytes": 2212
+  },
+  "__pycache__/ocosl_run_v4.cpython-313.pyc": {
+    "sha256": "4fe2d42dbda5a0c9011a3a63ffb5216b11aab42a7d362f3caef0717155da700e",
+    "bytes": 57466
+  },
+  "__pycache__/run_oi300_reltr_ocosl_v3.cpython-313.pyc": {
+    "sha256": "adb8528abe6900b5cc602accf59bb446f4944f3c2f51c52681a1b89418281eeb",
+    "bytes": 67861
+  },
+  "configs/final_reported_config.yaml": {
+    "sha256": "7cc4098844d584faea424d8f94e85b8ccc1863388266a12b9e29f0db26e46fa7",
+    "bytes": 1288
+  },
+  "experiments/__pycache__/build_visual_genome_manifest.cpython-313.pyc": {
+    "sha256": "14aee17fdcd7b5af6f4a25d8f426b42d48bb2f3b1a151363c4b6acad96486a35",
+    "bytes": 6263
+  },
+  "experiments/__pycache__/dense_scene_stress_test.cpython-313.pyc": {
+    "sha256": "db1cdb765bc8cf76e5744a83bf9ac71772024342075e907f3b72f152c82b9460",
+    "bytes": 3665
+  },
+  "experiments/__pycache__/statistical_analysis.cpython-313.pyc": {
+    "sha256": "6149210f1744e0480e4ec450d80df4dec5aec4bc0a39aeaaa21a633bcd8df0cf",
+    "bytes": 4347
+  },
+  "experiments/__pycache__/summarize_fallback_logs.cpython-313.pyc": {
+    "sha256": "414ac08d656f8b9e9686bdc09e15ec45f479229fb77c12f1fbb27f27e36a6880",
+    "bytes": 2569
+  },
+  "experiments/build_visual_genome_manifest.py": {
+    "sha256": "f103a11b940c3d96e782c3379d231cd061f6ec70dd3a66c01326654061e4216d",
+    "bytes": 2778
+  },
+  "experiments/dense_scene_stress_test.py": {
+    "sha256": "765e7e7e68c2b13a937ea36f39493d7fa39f8172297c85c0e37dcf0b7f079ec6",
+    "bytes": 1442
+  },
+  "experiments/statistical_analysis.py": {
+    "sha256": "6555b7855d74cd86dd8cef319cc2a1d65c359134da3801c7fdfb93d930631b15",
+    "bytes": 1569
+  },
+  "experiments/summarize_fallback_logs.py": {
+    "sha256": "58ffabbeea272a1584c4f003fc22edd31f52288a7de61c22f6ac50b4189aa2ef",
+    "bytes": 1008
+  },
+  "manifests/oi300_ids.txt": {
+    "sha256": "e07d026974a8c1e7c79a48e638271f9ac07ce5e7ea34260c4012f147d17f085e",
+    "bytes": 5100
+  },
+  "ocosl_run_final.py": {
+    "sha256": "f0f60af719b729d80fb1c8a31598536f3692cdcef345960c6d50d1942c653b06",
+    "bytes": 1589
+  },
+  "ocosl_run_v4.py": {
+    "sha256": "c71e45c335f8c57bb3091c5b6c00cf872058db188242c6ce198ac8c5d17aefad",
+    "bytes": 43825
+  },
+  "requirements_final.txt": {
+    "sha256": "887e57141b7cebdc71dda176584203b2f69aa6a574d038c42f09a696a51f979b",
+    "bytes": 90
+  },
+  "results/REMAINING_REQUIRED_RUNS.md": {
+    "sha256": "b9718c72782a5a7f9dc64c0d98550eb2debf8f6165f6d7f49fd6b846028d835c",
+    "bytes": 895
+  },
+  "results/oi_reltr_ocosl_controlled_300_v3_hierarchy.csv": {
+    "sha256": "d3224c1685792ee54d245735e4f14404d426bdba8063d586737093faa57a1840",
+    "bytes": 55448
+  },
+  "results/oi_reltr_ocosl_controlled_300_v3_hierarchy.json": {
+    "sha256": "8da750930aa21e50d2b2b1688f498f19314a10ed6e79393955bfd3a65e29bb85",
+    "bytes": 1754
+  },
+  "results/openimages_ocosl_canonical_mapping_v2.csv": {
+    "sha256": "4c7958c3f54a2ba15f8f00a7f70af2ab95b5694e37dfb480af66eec3304aaa13",
+    "bytes": 457
+  },
+  "results/reltr_ocosl_image_impact_300_v3.csv": {
+    "sha256": "2dba1d0c7450fb22140533979ef2e9682f297646443bbd9cdaba7204152d4c5d",
+    "bytes": 18835
+  },
+  "results/reltr_ocosl_relation_impact_300_v3.csv": {
+    "sha256": "fa645540efd1bbaecc6af06aeee808095fd7d6186ce958511ea031f8e9f6cb18",
+    "bytes": 183
+  },
+  "results/v3_hierarchy_compatibility_check.csv": {
+    "sha256": "eaa628cc0af112b958e2ed5a54b1b94bd2db85377a2a35b0c456ea79dab65639",
+    "bytes": 143
+  },
+  "run_oi300_reltr_ocosl_v3.py": {
+    "sha256": "c2be1d3cc178d4981b5a4bb83eee3301e710c63b31201cdfe2d0d57d46723be2",
+    "bytes": 49553
+  },
+  "src/__pycache__/crf_baseline.cpython-313.pyc": {
+    "sha256": "779adc74a4fc198fc911d8a87e284edc0d734b6041da894ddef3ab06045ea978",
+    "bytes": 5291
+  },
+  "src/__pycache__/diagnostics_traceability.cpython-313.pyc": {
+    "sha256": "211d1aa12c8fc7a432f22ea5f5ffb14cf03af7ae6d8e4a9ae3b1fed403a3d166",
+    "bytes": 6455
+  },
+  "src/__pycache__/ocosl_constraints_final.cpython-313.pyc": {
+    "sha256": "767130cc0210f4bd14e01c1f0e729e0226b06a05236d5887d877e8ff299a907f",
+    "bytes": 18878
+  },
+  "src/crf_baseline.py": {
+    "sha256": "1e04918c6fdae101d47c746867d42376a31a990a98031ce07c13c540c0401b5c",
+    "bytes": 2359
+  },
+  "src/diagnostics_traceability.py": {
+    "sha256": "90c9efe03bab2c39059f043cfe64509ee4b4de15cf4c36fbc575344c7a62d6ac",
+    "bytes": 3683
+  },
+  "src/ocosl_constraints_final.py": {
+    "sha256": "8334aeb6216c4d1a9aa124fa204c72d24995391b432f85058a016d3ac042a7b0",
+    "bytes": 10186
+  },
+  "tests/__pycache__/test_hierarchy.cpython-313.pyc": {
+    "sha256": "f60657eb88223ee5d2e53cc1ac5471b61b6471b3d4cf028ebc6bf430f1d9dc5f",
+    "bytes": 1716
+  },
+  "tests/test_hierarchy.py": {
+    "sha256": "2c3a9da85407793b6e0660cd519f7c91bdf125d11c2b25175f8d2e30901965c1",
+    "bytes": 667
+  }
+}

@@ -1,0 +1,55 @@
+# JOCO reported experiment configuration
+# Single human-readable source of settings reported in the revised manuscript.
+base_geometry_experiments:
+  detector:
+    model: yolov8n.pt
+    topk_labels: 3
+    detector_threshold: 0.25
+    duplicate_iou: 0.60
+  relation_generator:
+    type: geometry
+    tau_rel: 0.70
+  optimization:
+    relation_budget: "2n"
+    alpha: 0.40
+    beta: 0.30
+    gamma: 0.20
+    lambda_conflict: 0.10
+    solver: CBC
+    time_limit_s: 10
+    relative_gap_tolerance: 1.0e-4
+  ontology_score_weights:
+    w1_detector: 0.25
+    w2_lexical: 0.25
+    w3_semantic: 0.15
+    w4_hierarchy: 0.10
+    w5_prior: 0.15
+    w6_context: 0.10
+  relation_score_weights:
+    eta1_relation: 0.35
+    eta2_spatial: 0.30
+    eta3_type: 0.35
+  evaluation:
+    iou: 0.50
+
+reltr_v3_robustness_experiment:
+  generator: official_OI_trained_RelTR
+  query_threshold: 0.15
+  joint_triplet_score_threshold: 0.05
+  topk_triplets: 50
+  entity_merge_iou: 0.70
+  evaluation_iou: 0.50
+  relation_budget: "2n"
+  alpha: 0.40
+  beta: 0.30
+  gamma: 0.20
+  seed: 42
+  solver_time_limit_s: 10
+  bootstrap_samples: 5000
+  paired_permutations: 20000
+  hierarchy_relation_constraints: "transitive rdfs:subClassOf closure"
+
+datasets:
+  coco_images: 500
+  visual_genome_images: 400
+  open_images_images: 300
