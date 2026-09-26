@@ -1,8 +1,22 @@
-# JOCO RelTR + OCOSL V3 — Open Images 300
+# JOCO — OCOSL reproducibility repository
 
-This package archives the final controlled experiment used to answer the reviewer request for a stronger learned relation generator.
+This repository supports the revised manuscript **“Ontology-Constrained Combinatorial Optimization for Semantic Image Labeling via Scene Graph Reasoning.”**
 
-## Final result
+## Active artifacts
+
+- `JOCO_verified_ontology_schema_fixed.owl` — verified ontology used by the revised experiments.
+- `ocosl_run_final.py` — final solver wrapper: hierarchy-aware relation constraints, decomposition/repair fallback, diagnostics and traceability.
+- `src/ocosl_constraints_final.py` — hierarchy-aware ILP constraints and fallback implementation.
+- `src/crf_baseline.py` — pairwise CRF-style structured-inference baseline.
+- `src/diagnostics_traceability.py` — violation, compliance, traceability and explanation-evidence metrics.
+- `configs/final_reported_config.yaml` — reported base and RelTR-V3 settings.
+- `experiments/` — Visual Genome manifest builder, statistical analysis, fallback summarizer and dense-scene stress test.
+- `manifests/oi300_ids.txt` — exact 300 Open Images IDs represented in the final RelTR-V3 output.
+- `results/` — final RelTR-V3 outputs plus a checklist of experimental outputs that still require actual runs.
+
+## RelTR V3 stronger-generator experiment
+
+The controlled 300-image experiment compares the same OI-trained RelTR candidate pool before and after hierarchy-aware OCOSL inference.
 
 | Method | Precision | Recall | F1 |
 |---|---:|---:|---:|
@@ -10,42 +24,35 @@ This package archives the final controlled experiment used to answer the reviewe
 | RelTR-only, shared candidate pool | 0.461538 | 0.456747 | 0.459130 |
 | RelTR + hierarchy-aware OCOSL V3 | 0.461449 | 0.455594 | 0.458503 |
 
-- Micro-F1 difference: **-0.0006278**
-- Paired permutation p-value: **1.0**
-- Per-image improved / equal / worse: **1 / 298 / 1**
-- Fallback count: **0**
-- Average OCOSL solver time: **0.00640 s/image**
+Micro-F1 difference = **-0.0006278**; paired permutation **p=1.0**; per-image improved/equal/worse = **1/298/1**; fallback count = **0**.
 
-## Why V3
-
-The original solver tested relation domain/range types using flat `label_to_type(...) == type` equality. The final V3 implementation instead follows the ontology hierarchy using the transitive closure of `rdfs:subClassOf`. This fixes valid cases such as `Boat ⊑ Vehicle` and `Glasses ⊑ Clothing` without changing the ontology, thresholds, objective weights, relation budget, or evaluation IoU.
-
-## Files
-
-- `run_oi300_reltr_ocosl_v3.py`: GitHub-ready reproducibility runner.
-- `JOCO_RelTR_OCOSL_V3_300_results.ipynb`: compact results/reproducibility notebook.
-- `results/`: final 300-image outputs and diagnostics.
-
-## Kaggle rerun
-
-The runner can auto-locate the OI-300 dataset and JOCO code when they are attached as Kaggle inputs.
-
+Run:
 ```bash
-python run_oi300_reltr_ocosl_v3.py \
-  --prepare-reltr \
-  --output-dir /kaggle/working/JOCO/results_v3 \
-  --n-images 300 \
-  --verify-reference
+python run_oi300_reltr_ocosl_v3.py   --prepare-reltr   --output-dir /kaggle/working/JOCO/results_v3   --n-images 300   --verify-reference
 ```
 
-Required JOCO implementation files:
-- `ocosl_run_v4.py`
-- `ocosl_utils_v3.py`
-- `JOCO_verified_ontology_schema_fixed.owl`
+## Base reported configuration
 
-Required Open Images subset:
-- `oi300_ids.txt`
-- `images/*.jpg`
-- `openimages_relationships.csv`
+See `configs/final_reported_config.yaml`. The revised manuscript reports, for the geometry-driven base experiments, top-k=3, detector threshold 0.25, relation threshold 0.70, duplicate IoU 0.60, relation budget C=2n, alpha=0.40, beta=0.30, gamma=0.20, lambda=0.10, and CBC time limit 10 s. The RelTR robustness experiment has its own explicitly separated settings in the same file.
 
-`--prepare-reltr` clones the official RelTR repository and downloads the official OI checkpoint/metadata used by the experiment.
+## Important reproducibility status
+
+The repository distinguishes **released code** from **completed experimental evidence**. Files/scripts have been added for the Visual Genome manifest, pairwise CRF baseline, fallback analysis, dense-scene stress test, violation metrics, traceability logs, and paired statistical tests. Their manuscript values must come from actual runs; no missing result is fabricated.
+
+Before removing every red warning in the manuscript, read:
+
+`results/REMAINING_REQUIRED_RUNS.md`
+
+## Legacy files
+
+`ocosl_run_v3.py`, `ocosl_utils_v3.py`, `v5_ocosl_ontology_schema.owl`, and `v6_ocosl_ontology_schema_openimages.owl` are retained for provenance. The revised active entry point is `ocosl_run_final.py`, while the RelTR-V3 experiment uses `run_oi300_reltr_ocosl_v3.py`.
+
+## Environment
+
+```bash
+pip install -r requirements_final.txt
+```
+
+## Data
+
+The manuscript uses MS COCO, Visual Genome, and an Open Images subset. Public dataset files are not redistributed here. Exact processed subset identifiers should be stored under `manifests/`; the final OI-300 manifest is included. The Visual Genome builder can either consume the original manifest or generate a deterministic replacement that must then be used consistently in rerun results.

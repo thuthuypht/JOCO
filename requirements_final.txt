@@ -1,0 +1,12 @@
+numpy
+pandas
+Pillow
+rdflib
+rapidfuzz
+PuLP
+PyYAML
+tqdm
+ultralytics
+torch
+torchvision
+gdown
