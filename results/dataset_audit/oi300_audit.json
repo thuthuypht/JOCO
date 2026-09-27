@@ -1,0 +1,9 @@
+{
+  "dataset": "Open Images OI-300",
+  "images_N": 300,
+  "bbox_rows_B": 5823,
+  "object_object_relations_R": 867,
+  "all_relationship_rows": 867,
+  "unique_bbox_classes": 209,
+  "unique_relation_labels": 19
+}

@@ -1,0 +1,4 @@
+dataset,status,images_N,boxes_B,relations_R,manifest
+COCO-500,OK,500,3505,,coco500_image_ids.txt
+Visual Genome-400,NEW_DETERMINISTIC_MANIFEST,400,9597,8797,vg400_image_ids.txt
+Open Images-300,OK,300,5823,867,oi300_image_ids.txt

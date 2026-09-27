@@ -1,0 +1,14 @@
+{
+  "dataset": "Visual Genome v1.4",
+  "subset_status": "NEW deterministic authoritative VG-400 for reruns",
+  "selection_rule": "random.sample(seed=42) from images having metadata, >=1 object, >=1 relationship",
+  "seed": 42,
+  "eligible_pool_size": 104469,
+  "images_N": 400,
+  "raw_object_instances_B": 9597,
+  "raw_relationship_instances_R": 8797,
+  "top_object_vocabulary_size": 150,
+  "objects_json_sha256": "94238b6187c0ea1f97acc1fdaec106bd3dee12bb0f81b23dc8b07e9173514985",
+  "relationships_json_sha256": "9a7d5f396bd9f1d150e6977c2896ca4feb6024068c6e4c51d571d385f5ab4e64",
+  "image_data_json_sha256": "93d0053d7e8f451497646fa513e8fb9b1a889df6e757010b88e51e2e21803487"
+}
