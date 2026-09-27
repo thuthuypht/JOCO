@@ -1,0 +1,20 @@
+relation_label,normalized_predicate,mapped_internal,mappable
+at,at,near,1
+catch,catch,,0
+contain,contain,,0
+dance,dance,,0
+hang,hang,,0
+hits,hits,,0
+holds,holds,,0
+inside_of,inside of,,0
+interacts_with,interacts with,,0
+kick,kick,,0
+kiss,kiss,,0
+on,on,isOn,1
+plays,plays,,0
+read,read,,0
+ride,ride,,0
+skateboard,skateboard,,0
+surf,surf,,0
+throw,throw,,0
+wears,wears,,0

@@ -1,0 +1,80 @@
+dataset,source_label,normalized_source_label,ontology_concepts,matched_detector_concepts,matched_detector_labels,eligible_detector_space,mapping_basis
+COCO,person,person,Person,Person,person,1,ontology-concept
+COCO,bicycle,bicycle,Bicycle,Bicycle,bicycle,1,ontology-concept
+COCO,car,car,Car,Car,car,1,ontology-concept
+COCO,motorcycle,motorcycle,Motorcycle,Motorcycle,motorcycle,1,ontology-concept
+COCO,airplane,airplane,Airplane,Airplane,airplane,1,ontology-concept
+COCO,bus,bus,Bus,Bus,bus,1,ontology-concept
+COCO,train,train,Train,Train,train,1,ontology-concept
+COCO,truck,truck,Truck,Truck,truck,1,ontology-concept
+COCO,boat,boat,Boat,Boat,boat,1,ontology-concept
+COCO,traffic light,traffic light,,,traffic light,1,exact-label
+COCO,fire hydrant,fire hydrant,,,fire hydrant,1,exact-label
+COCO,stop sign,stop sign,,,stop sign,1,exact-label
+COCO,parking meter,parking meter,,,parking meter,1,exact-label
+COCO,bench,bench,Bench,Bench,bench,1,ontology-concept
+COCO,bird,bird,Bird,Bird,bird,1,ontology-concept
+COCO,cat,cat,Cat,Cat,cat,1,ontology-concept
+COCO,dog,dog,Dog,Dog,dog,1,ontology-concept
+COCO,horse,horse,Horse,Horse,horse,1,ontology-concept
+COCO,sheep,sheep,Sheep,Sheep,sheep,1,ontology-concept
+COCO,cow,cow,Cow,Cow,cow,1,ontology-concept
+COCO,elephant,elephant,Elephant,Elephant,elephant,1,ontology-concept
+COCO,bear,bear,Bear,Bear,bear,1,ontology-concept
+COCO,zebra,zebra,Zebra,Zebra,zebra,1,ontology-concept
+COCO,giraffe,giraffe,Giraffe,Giraffe,giraffe,1,ontology-concept
+COCO,backpack,backpack,Backpack,Backpack,backpack,1,ontology-concept
+COCO,umbrella,umbrella,Umbrella,Umbrella,umbrella,1,ontology-concept
+COCO,handbag,handbag,Handbag,Handbag,handbag,1,ontology-concept
+COCO,tie,tie,Tie,Tie,tie,1,ontology-concept
+COCO,suitcase,suitcase,Suitcase,Suitcase,suitcase,1,ontology-concept
+COCO,frisbee,frisbee,Frisbee,Frisbee,frisbee,1,ontology-concept
+COCO,skis,skis,Skis,Skis,skis,1,ontology-concept
+COCO,snowboard,snowboard,Snowboard,Snowboard,snowboard,1,ontology-concept
+COCO,sports ball,sports ball,,,sports ball,1,exact-label
+COCO,kite,kite,Kite,Kite,kite,1,ontology-concept
+COCO,baseball bat,baseball bat,,,baseball bat,1,exact-label
+COCO,baseball glove,baseball glove,,,baseball glove,1,exact-label
+COCO,skateboard,skateboard,Skateboard,Skateboard,skateboard,1,ontology-concept
+COCO,surfboard,surfboard,Surfboard,Surfboard,surfboard,1,ontology-concept
+COCO,tennis racket,tennis racket,,,tennis racket,1,exact-label
+COCO,bottle,bottle,Bottle,Bottle,bottle,1,ontology-concept
+COCO,wine glass,wine glass,,,wine glass,1,exact-label
+COCO,cup,cup,Cup,Cup,cup,1,ontology-concept
+COCO,fork,fork,Fork,Fork,fork,1,ontology-concept
+COCO,knife,knife,Knife,Knife,knife,1,ontology-concept
+COCO,spoon,spoon,Spoon,Spoon,spoon,1,ontology-concept
+COCO,bowl,bowl,Bowl,Bowl,bowl,1,ontology-concept
+COCO,banana,banana,Banana,Banana,banana,1,ontology-concept
+COCO,apple,apple,Apple,Apple,apple,1,ontology-concept
+COCO,sandwich,sandwich,Sandwich,Sandwich,sandwich,1,ontology-concept
+COCO,orange,orange,Orange,Orange,orange,1,ontology-concept
+COCO,broccoli,broccoli,Broccoli,Broccoli,broccoli,1,ontology-concept
+COCO,carrot,carrot,Carrot,Carrot,carrot,1,ontology-concept
+COCO,hot dog,hot dog,,,hot dog,1,exact-label
+COCO,pizza,pizza,Pizza,Pizza,pizza,1,ontology-concept
+COCO,donut,donut,Donut,Donut,donut,1,ontology-concept
+COCO,cake,cake,Cake,Cake,cake,1,ontology-concept
+COCO,chair,chair,Chair,Chair,chair,1,ontology-concept
+COCO,couch,couch,Couch,Couch,couch,1,ontology-concept
+COCO,potted plant,potted plant,,,potted plant,1,exact-label
+COCO,bed,bed,Bed,Bed,bed,1,ontology-concept
+COCO,dining table,dining table,,,dining table,1,exact-label
+COCO,toilet,toilet,Toilet,Toilet,toilet,1,ontology-concept
+COCO,tv,tv,,,tv,1,exact-label
+COCO,laptop,laptop,Laptop,Laptop,laptop,1,ontology-concept
+COCO,mouse,mouse,Mouse,Mouse,mouse,1,ontology-concept
+COCO,remote,remote,Remote,Remote,remote,1,ontology-concept
+COCO,keyboard,keyboard,Keyboard,Keyboard,keyboard,1,ontology-concept
+COCO,cell phone,cell phone,,,cell phone,1,exact-label
+COCO,microwave,microwave,Microwave,Microwave,microwave,1,ontology-concept
+COCO,oven,oven,Oven,Oven,oven,1,ontology-concept
+COCO,toaster,toaster,Toaster,Toaster,toaster,1,ontology-concept
+COCO,sink,sink,,,sink,1,exact-label
+COCO,refrigerator,refrigerator,Refrigerator,Refrigerator,refrigerator,1,ontology-concept
+COCO,book,book,Book,Book,book,1,ontology-concept
+COCO,clock,clock,Clock,Clock,clock,1,ontology-concept
+COCO,vase,vase,Vase,Vase,vase,1,ontology-concept
+COCO,scissors,scissors,Scissors,Scissors,scissors,1,ontology-concept
+COCO,teddy bear,teddy bear,,,teddy bear,1,exact-label
+COCO,toothbrush,toothbrush,,,toothbrush,1,exact-label

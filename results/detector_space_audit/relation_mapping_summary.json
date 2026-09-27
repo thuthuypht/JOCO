@@ -1,0 +1,14 @@
+{
+  "visual_genome": {
+    "unique_predicates": 652,
+    "mappable_unique_predicates": 17,
+    "raw_relation_instances": 8796,
+    "mappable_relation_instances": 4073,
+    "mappable_instance_fraction": 0.4630513869940882
+  },
+  "open_images": {
+    "unique_predicates": 19,
+    "mappable_unique_predicates": 2,
+    "note": "Instance-weighted OI coverage will be computed in the corrected full evaluator."
+  }
+}

@@ -1,0 +1,210 @@
+dataset,source_label,normalized_source_label,ontology_concepts,matched_detector_concepts,matched_detector_labels,eligible_detector_space,mapping_basis
+Open Images,Accordion,accordion,,,,0,none
+Open Images,Animal,animal,Animal,,,0,none
+Open Images,Baked goods,baked goods,,,,0,none
+Open Images,Balance beam,balance beam,,,,0,none
+Open Images,Ball,ball,,,,0,none
+Open Images,Banjo,banjo,,,,0,none
+Open Images,Baseball bat,baseball bat,,,baseball bat,1,exact-label
+Open Images,Baseball glove,baseball glove,,,baseball glove,1,exact-label
+Open Images,Bed,bed,Bed,Bed,bed,1,ontology-concept
+Open Images,Bee,bee,Bee,,,0,none
+Open Images,Beehive,beehive,,,,0,none
+Open Images,Beer,beer,,,,0,none
+Open Images,Belt,belt,Belt,,,0,none
+Open Images,Bicycle,bicycle,Bicycle,Bicycle,bicycle,1,ontology-concept
+Open Images,Bicycle helmet,bicycle helmet,,,,0,none
+Open Images,Bicycle wheel,bicycle wheel,,,,0,none
+Open Images,Billiard table,billiard table,,,,0,none
+Open Images,Bird,bird,Bird,Bird,bird,1,ontology-concept
+Open Images,Boat,boat,Boat,Boat,boat,1,ontology-concept
+Open Images,Book,book,Book,Book,book,1,ontology-concept
+Open Images,Bookcase,bookcase,,,,0,none
+Open Images,Boot,boot,,,,0,none
+Open Images,Bottle,bottle,Bottle,Bottle,bottle,1,ontology-concept
+Open Images,Bow and arrow,bow and arrow,,,,0,none
+Open Images,Bowl,bowl,Bowl,Bowl,bowl,1,ontology-concept
+Open Images,Boy,boy,,,,0,none
+Open Images,Brassiere,brassiere,,,,0,none
+Open Images,Bread,bread,Bread,,,0,none
+Open Images,Building,building,,,,0,none
+Open Images,Bus,bus,Bus,Bus,bus,1,ontology-concept
+Open Images,Cabinetry,cabinetry,,,,0,none
+Open Images,Cake,cake,Cake,Cake,cake,1,ontology-concept
+Open Images,Camera,camera,Camera,,,0,none
+Open Images,Canoe,canoe,,,,0,none
+Open Images,Car,car,Car,Car,car,1,ontology-concept
+Open Images,Cart,cart,,,,0,none
+Open Images,Cat,cat,Cat,Cat,cat,1,ontology-concept
+Open Images,Cello,cello,,,,0,none
+Open Images,Chair,chair,Chair,Chair,chair,1,ontology-concept
+Open Images,Chest of drawers,chest of drawers,,,,0,none
+Open Images,Chopsticks,chopsticks,,,,0,none
+Open Images,Clothing,clothing,Clothing,,,0,none
+Open Images,Coat,coat,Coat,,,0,none
+Open Images,Cocktail,cocktail,,,,0,none
+Open Images,Coconut,coconut,,,,0,none
+Open Images,Coffee,coffee,,,,0,none
+Open Images,Coffee cup,coffee cup,,,,0,none
+Open Images,Coffee table,coffee table,,,,0,none
+Open Images,Computer keyboard,computer keyboard,,,,0,none
+Open Images,Computer monitor,computer monitor,,,,0,none
+Open Images,Couch,couch,Couch,Couch,couch,1,ontology-concept
+Open Images,Countertop,countertop,,,,0,none
+Open Images,Cowboy hat,cowboy hat,,,,0,none
+Open Images,Crown,crown,,,,0,none
+Open Images,Cupboard,cupboard,,,,0,none
+Open Images,Curtain,curtain,,,,0,none
+Open Images,Dairy Product,dairy product,,,,0,none
+Open Images,Desk,desk,Desk,,,0,none
+Open Images,Dog,dog,Dog,Dog,dog,1,ontology-concept
+Open Images,Door,door,,,,0,none
+Open Images,Drawer,drawer,,,,0,none
+Open Images,Dress,dress,Dress,,,0,none
+Open Images,Drink,drink,,,,0,none
+Open Images,Drum,drum,,,,0,none
+Open Images,Earrings,earrings,,,,0,none
+Open Images,Fashion accessory,fashion accessory,,,,0,none
+Open Images,Fast food,fast food,,,,0,none
+Open Images,Fedora,fedora,,,,0,none
+Open Images,Flower,flower,,,,0,none
+Open Images,Flowerpot,flowerpot,,,,0,none
+Open Images,Flying disc,flying disc,,,,0,none
+Open Images,Food,food,Food,,,0,none
+Open Images,Football,football,Football,,,0,none
+Open Images,Football helmet,football helmet,,,,0,none
+Open Images,Footwear,footwear,,,,0,none
+Open Images,French horn,french horn,,,,0,none
+Open Images,Fruit,fruit,,,,0,none
+Open Images,Furniture,furniture,Furniture,,,0,none
+Open Images,Girl,girl,,,,0,none
+Open Images,Glasses,glasses,Glasses,,,0,none
+Open Images,Goggles,goggles,,,,0,none
+Open Images,Gondola,gondola,,,,0,none
+Open Images,Grape,grape,,,,0,none
+Open Images,Grapefruit,grapefruit,,,,0,none
+Open Images,Guitar,guitar,,,,0,none
+Open Images,Handbag,handbag,Handbag,Handbag,handbag,1,ontology-concept
+Open Images,Hat,hat,Hat,,,0,none
+Open Images,Helmet,helmet,Helmet,,,0,none
+Open Images,High heels,high heels,,,,0,none
+Open Images,Hiking equipment,hiking equipment,,,,0,none
+Open Images,Home appliance,home appliance,,,,0,none
+Open Images,Honeycomb,honeycomb,,,,0,none
+Open Images,Horse,horse,Horse,Horse,horse,1,ontology-concept
+Open Images,House,house,,,,0,none
+Open Images,Houseplant,houseplant,,,,0,none
+Open Images,Human arm,human arm,,,,0,none
+Open Images,Human beard,human beard,,,,0,none
+Open Images,Human body,human body,,,,0,none
+Open Images,Human ear,human ear,,,,0,none
+Open Images,Human eye,human eye,,,,0,none
+Open Images,Human face,human face,,,,0,none
+Open Images,Human foot,human foot,,,,0,none
+Open Images,Human hair,human hair,,,,0,none
+Open Images,Human hand,human hand,,,,0,none
+Open Images,Human head,human head,,,,0,none
+Open Images,Human leg,human leg,,,,0,none
+Open Images,Human mouth,human mouth,,,,0,none
+Open Images,Human nose,human nose,,,,0,none
+Open Images,Infant bed,infant bed,,,,0,none
+Open Images,Jacket,jacket,Jacket,,,0,none
+Open Images,Jeans,jeans,,,,0,none
+Open Images,Kettle,kettle,,,,0,none
+Open Images,Kitchen & dining room table,kitchen & dining room table,,,,0,none
+Open Images,Kitchen appliance,kitchen appliance,,,,0,none
+Open Images,Land vehicle,land vehicle,,,,0,none
+Open Images,Lemon,lemon,,,,0,none
+Open Images,Lily,lily,,,,0,none
+Open Images,Lipstick,lipstick,,,,0,none
+Open Images,Loveseat,loveseat,,,,0,none
+Open Images,Mammal,mammal,,,,0,none
+Open Images,Man,man,,,,0,none
+Open Images,Microphone,microphone,,,,0,none
+Open Images,Microwave oven,microwave oven,,,,0,none
+Open Images,Milk,milk,,,,0,none
+Open Images,Miniskirt,miniskirt,,,,0,none
+Open Images,Mobile phone,mobile phone,,,,0,none
+Open Images,Motorcycle,motorcycle,Motorcycle,Motorcycle,motorcycle,1,ontology-concept
+Open Images,Mug,mug,Mug,,,0,none
+Open Images,Musical instrument,musical instrument,,,,0,none
+Open Images,Musical keyboard,musical keyboard,,,,0,none
+Open Images,Necklace,necklace,Necklace,,,0,none
+Open Images,Office building,office building,,,,0,none
+Open Images,Office supplies,office supplies,,,,0,none
+Open Images,Paddle,paddle,,,,0,none
+Open Images,Palm tree,palm tree,,,,0,none
+Open Images,Pastry,pastry,,,,0,none
+Open Images,Peach,peach,,,,0,none
+Open Images,Person,person,Person,Person,person,1,ontology-concept
+Open Images,Pillow,pillow,Pillow,,,0,none
+Open Images,Plant,plant,,,,0,none
+Open Images,Plate,plate,Plate,,,0,none
+Open Images,Platter,platter,,,,0,none
+Open Images,Racket,racket,,,,0,none
+Open Images,Rifle,rifle,,,,0,none
+Open Images,Roller skates,roller skates,,,,0,none
+Open Images,Rose,rose,,,,0,none
+Open Images,Rugby ball,rugby ball,,,,0,none
+Open Images,Sandal,sandal,,,,0,none
+Open Images,Saucer,saucer,,,,0,none
+Open Images,Saxophone,saxophone,,,,0,none
+Open Images,Scarf,scarf,Scarf,,,0,none
+Open Images,Seafood,seafood,,,,0,none
+Open Images,Segway,segway,,,,0,none
+Open Images,Shelf,shelf,Shelf,,,0,none
+Open Images,Shirt,shirt,Shirt,,,0,none
+Open Images,Shorts,shorts,,,,0,none
+Open Images,Shotgun,shotgun,,,,0,none
+Open Images,Skateboard,skateboard,Skateboard,Skateboard,skateboard,1,ontology-concept
+Open Images,Snack,snack,,,,0,none
+Open Images,Sofa bed,sofa bed,,,,0,none
+Open Images,Sombrero,sombrero,,,,0,none
+Open Images,Spoon,spoon,Spoon,Spoon,spoon,1,ontology-concept
+Open Images,Sports equipment,sports equipment,,,,0,none
+Open Images,Sports uniform,sports uniform,,,,0,none
+Open Images,Strawberry,strawberry,,,,0,none
+Open Images,Stretcher,stretcher,,,,0,none
+Open Images,Studio couch,studio couch,,,,0,none
+Open Images,Suit,suit,Suit,,,0,none
+Open Images,Sun hat,sun hat,,,,0,none
+Open Images,Sunglasses,sunglasses,,,,0,none
+Open Images,Surfboard,surfboard,Surfboard,Surfboard,surfboard,1,ontology-concept
+Open Images,Sushi,sushi,,,,0,none
+Open Images,Swim cap,swim cap,,,,0,none
+Open Images,Swimming pool,swimming pool,,,,0,none
+Open Images,Swimwear,swimwear,,,,0,none
+Open Images,Table,table,Table,,,0,none
+Open Images,Table tennis racket,table tennis racket,,,,0,none
+Open Images,Tableware,tableware,,,,0,none
+Open Images,Tart,tart,,,,0,none
+Open Images,Tea,tea,,,,0,none
+Open Images,Teapot,teapot,,,,0,none
+Open Images,Tennis racket,tennis racket,,,tennis racket,1,exact-label
+Open Images,Tiara,tiara,,,,0,none
+Open Images,Tie,tie,Tie,Tie,tie,1,ontology-concept
+Open Images,Tire,tire,,,,0,none
+Open Images,Toy,toy,,,,0,none
+Open Images,Train,train,Train,Train,train,1,ontology-concept
+Open Images,Tree,tree,,,,0,none
+Open Images,Tree house,tree house,,,,0,none
+Open Images,Tripod,tripod,,,,0,none
+Open Images,Trombone,trombone,,,,0,none
+Open Images,Trousers,trousers,,,,0,none
+Open Images,Trumpet,trumpet,,,,0,none
+Open Images,Unicycle,unicycle,,,,0,none
+Open Images,Vase,vase,Vase,Vase,vase,1,ontology-concept
+Open Images,Vegetable,vegetable,,,,0,none
+Open Images,Vehicle,vehicle,Vehicle,,,0,none
+Open Images,Violin,violin,,,,0,none
+Open Images,Volleyball (Ball),volleyball (ball),,,,0,none
+Open Images,Watercraft,watercraft,,,,0,none
+Open Images,Weapon,weapon,,,,0,none
+Open Images,Wheel,wheel,,,,0,none
+Open Images,Wheelchair,wheelchair,Wheelchair,,,0,none
+Open Images,Whiteboard,whiteboard,,,,0,none
+Open Images,Window,window,,,,0,none
+Open Images,Wine,wine,,,,0,none
+Open Images,Wine glass,wine glass,,,wine glass,1,exact-label
+Open Images,Wok,wok,,,,0,none
+Open Images,Woman,woman,,,,0,none

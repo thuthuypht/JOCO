@@ -1,0 +1,653 @@
+predicate,count,normalized_predicate,mapped_internal,mappable
+on,2537,on,isOn,1
+has,867,has,,0
+in,775,in,insideOf,1
+wearing,564,wearing,,0
+of,533,of,,0
+with,269,with,,0
+holding,225,holding,,0
+behind,140,behind,behind,1
+near,128,near,near,1
+on top of,106,on top of,isOn,1
+on a,105,on a,,0
+next to,91,next to,near,1
+of a,76,of a,,0
+in front of,67,in front of,inFrontOf,1
+above,64,above,isAbove,1
+under,63,under,isBelow,1
+in a,58,in a,,0
+at,55,at,,0
+has a,54,has a,,0
+by,52,by,,0
+wearing a,46,wearing a,,0
+on side of,43,on side of,,0
+riding,43,riding,,0
+attached to,39,attached to,,0
+over,35,over,isAbove,1
+sitting on,31,sitting on,,0
+playing,31,playing,,0
+around,30,around,,0
+walking on,30,walking on,,0
+are on,30,are on,,0
+for,28,for,,0
+hanging on,27,hanging on,,0
+beside,25,beside,near,1
+facing,22,facing,,0
+between,22,between,,0
+wears,22,wears,,0
+standing on,22,standing on,,0
+hanging from,21,hanging from,,0
+painted on,19,painted on,,0
+belonging to,19,belonging to,,0
+says,18,says,,0
+with a,17,with a,,0
+carrying,17,carrying,,0
+eating,17,eating,,0
+along,17,along,,0
+watching,16,watching,,0
+walking,14,walking,,0
+laying on,14,laying on,,0
+inside,14,inside,insideOf,1
+inside of,14,inside of,insideOf,1
+sitting in,13,sitting in,,0
+looking at,13,looking at,,0
+covered in,12,covered in,,0
+pulling,12,pulling,,0
+and,11,and,,0
+are in,11,are in,,0
+on back of,11,on back of,,0
+against,10,against,,0
+worn by,10,worn by,,0
+underneath,10,underneath,,0
+holds,10,holds,,0
+made of,10,made of,,0
+standing in,9,standing in,,0
+in front of a,9,in front of a,,0
+crossing,9,crossing,,0
+flying,9,flying,,0
+covering,9,covering,,0
+standing,9,standing,,0
+have,9,have,,0
+leading to,8,leading to,,0
+from,8,from,,0
+sitting at,7,sitting at,,0
+driving on,7,driving on,,0
+using,7,using,,0
+walking in,7,walking in,,0
+sitting,7,sitting,,0
+talking on,7,talking on,,0
+lining,7,lining,,0
+built into,7,built into,,0
+shining on,7,shining on,,0
+of an,6,of an,,0
+to,6,to,,0
+holding an,6,holding an,,0
+printed on,6,printed on,,0
+adorning,6,adorning,,0
+supporting,6,supporting,,0
+flying in,6,flying in,,0
+catching,6,catching,,0
+mounted on,6,mounted on,,0
+outside,5,outside,,0
+posing behind,5,posing behind,,0
+beneath,5,beneath,,0
+parked on,5,parked on,,0
+lying on,5,lying on,,0
+stuck in,5,stuck in,,0
+outside of,5,outside of,,0
+sitting behind,5,sitting behind,,0
+reflected on,5,reflected on,,0
+walking down,5,walking down,,0
+that,5,that,,0
+playing with,5,playing with,,0
+hanging in,5,hanging in,,0
+below,5,below,isBelow,1
+skiing in,5,skiing in,,0
+covered with,5,covered with,,0
+growing on,5,growing on,,0
+across,5,across,,0
+standing near,4,standing near,,0
+decorated with,4,decorated with,,0
+checking,4,checking,,0
+across from,4,across from,,0
+numeral  on,4,numeral on,,0
+surrounding,4,surrounding,,0
+contains,4,contains,contains,1
+in between,4,in between,,0
+behind  a,4,behind a,,0
+part of,4,part of,,0
+touching,4,touching,,0
+grazing in,4,grazing in,,0
+played on,4,played on,,0
+left of,4,left of,leftOf,1
+next,4,next,,0
+skiing on a,4,skiing on a,,0
+skiing on,4,skiing on,,0
+on a ski,4,on a ski,,0
+parked in front of,4,parked in front of,,0
+reflected in,4,reflected in,,0
+kicking,4,kicking,,0
+without,4,without,,0
+mounted underneath,4,mounted underneath,,0
+girls playing,4,girls playing,,0
+on young girl ball,4,on young girl ball,,0
+floating through,4,floating through,,0
+in side of,4,in side of,,0
+are in a,3,are in a,,0
+leaning against,3,leaning against,,0
+on side of a,3,on side of a,,0
+at a,3,at a,,0
+near a,3,near a,,0
+has light with,3,has light with,,0
+showing,3,showing,,0
+on foot of,3,on foot of,,0
+ridden by,3,ridden by,,0
+sits on,3,sits on,,0
+walks on,3,walks on,,0
+holding up,3,holding up,,0
+beyond,3,beyond,,0
+parked at,3,parked at,,0
+in back of,3,in back of,,0
+sewn on,3,sewn on,,0
+swinging,3,swinging,,0
+are behind,3,are behind,,0
+standing next to,3,standing next to,,0
+on womans,3,on womans,,0
+looking over,3,looking over,,0
+touches,3,touches,,0
+made from,3,made from,,0
+drives down,3,drives down,,0
+riding on,3,riding on,,0
+front,3,front,,0
+yellow,3,yellow,,0
+containing,3,containing,,0
+photographing,3,photographing,,0
+flying through,3,flying through,,0
+on half of,3,on half of,,0
+petting,3,petting,,0
+playing baseball on,3,playing baseball on,,0
+intended for,3,intended for,,0
+hitting,3,hitting,,0
+visible in,3,visible in,,0
+hanging above,3,hanging above,,0
+skiing,3,skiing,,0
+to left of,3,to left of,,0
+are outside,2,are outside,,0
+visible on,2,visible on,,0
+on edge of,2,on edge of,,0
+moving beside,2,moving beside,,0
+driving down,2,driving down,,0
+with no,2,with no,,0
+at top of,2,at top of,,0
+on curved,2,on curved,,0
+walking across,2,walking across,,0
+cutting,2,cutting,,0
+resting on,2,resting on,,0
+side,2,side,,0
+displayed on,2,displayed on,,0
+low on,2,low on,,0
+sleeping on,2,sleeping on,,0
+open on,2,open on,,0
+held in,2,held in,,0
+tied to,2,tied to,,0
+on the,2,on the,,0
+kneeling on,2,kneeling on,,0
+with h,2,with h,,0
+on front of,2,on front of,,0
+close to,2,close to,,0
+made of wood laid across,2,made of wood laid across,,0
+watch,2,watch,,0
+laying,2,laying,,0
+leaning,2,leaning,,0
+on top,2,on top,,0
+standing on one,2,standing on one,,0
+parked near,2,parked near,,0
+walking along,2,walking along,,0
+that on,2,that on,,0
+are floating in,2,are floating in,,0
+wears a,2,wears a,,0
+holding a,2,holding a,,0
+standing under,2,standing under,,0
+riding in,2,riding in,,0
+leading,2,leading,,0
+falls on,2,falls on,,0
+with open,2,with open,,0
+missing,2,missing,,0
+covered,2,covered,,0
+are near,2,are near,,0
+affixed to,2,affixed to,,0
+parked in,2,parked in,,0
+seated on,2,seated on,,0
+bending,2,bending,,0
+has on,2,has on,,0
+cover,2,cover,,0
+standing at,2,standing at,,0
+growing behind,2,growing behind,,0
+passes by,2,passes by,,0
+ahead of a,2,ahead of a,,0
+in front,2,in front,,0
+on side,2,on side,,0
+taking,2,taking,,0
+setting,2,setting,,0
+parked,2,parked,,0
+has black,2,has black,,0
+inscribed on,2,inscribed on,,0
+putting on,2,putting on,,0
+on top of a,2,on top of a,,0
+in middle of,2,in middle of,,0
+inside a,2,inside a,,0
+hanging over,2,hanging over,,0
+besides,2,besides,,0
+holding onto a,2,holding onto a,,0
+balances with,2,balances with,,0
+casted on,2,casted on,,0
+sitting on top of,2,sitting on top of,,0
+driving,2,driving,,0
+on end of,2,on end of,,0
+sitting on a,2,sitting on a,,0
+are hanging from,2,are hanging from,,0
+standing on a,2,standing on a,,0
+dragging,2,dragging,,0
+talking on a,2,talking on a,,0
+beside of,2,beside of,,0
+in bed of,2,in bed of,,0
+reflecting in,2,reflecting in,,0
+written on,2,written on,,0
+on right side of,2,on right side of,,0
+carries,2,carries,,0
+side of,2,side of,,0
+has a little,2,has a little,,0
+growing alongside,2,growing alongside,,0
+people playing,2,people playing,,0
+watching softball,2,watching softball,,0
+are next to,2,are next to,,0
+extending,2,extending,,0
+holding bat with,2,holding bat with,,0
+worn on,2,worn on,,0
+red,2,red,,0
+blue,2,blue,,0
+body,2,body,,0
+shows,2,shows,,0
+on black,2,on black,,0
+tracks,2,tracks,,0
+has curved,2,has curved,,0
+dressed in,2,dressed in,,0
+curving away from,2,curving away from,,0
+over a,1,over a,,0
+walking toward,1,walking toward,,0
+lounging,1,lounging,,0
+selling,1,selling,,0
+run across,1,run across,,0
+in mid,1,in mid,,0
+and street in front of city,1,and street in front of city,,0
+between street and,1,between street and,,0
+of two profiles in back of parked,1,of two profiles in back of parked,,0
+and terraced entryway into,1,and terraced entryway into,,0
+showing lit,1,showing lit,,0
+riding in front of,1,riding in front of,,0
+arrow and print on street,1,arrow and print on street,,0
+is taken,1,is taken,,0
+filled with,1,filled with,,0
+sitting in front of,1,sitting in front of,,0
+away from,1,away from,,0
+painted,1,painted,,0
+coved,1,coved,,0
+leans on,1,leans on,,0
+walking behind,1,walking behind,,0
+streaming across,1,streaming across,,0
+from a,1,from a,,0
+carry,1,carry,,0
+along side of,1,along side of,,0
+inspected by,1,inspected by,,0
+in mans,1,in mans,,0
+on sale at a,1,on sale at a,,0
+drizzled on,1,drizzled on,,0
+wrapped around,1,wrapped around,,0
+support,1,support,,0
+impaled in,1,impaled in,,0
+standing by,1,standing by,,0
+drinking from,1,drinking from,,0
+on a womans,1,on a womans,,0
+runs alongside,1,runs alongside,,0
+walking ir,1,walking ir,,0
+hangs from,1,hangs from,,0
+scattered,1,scattered,,0
+carrying a,1,carrying a,,0
+pull,1,pull,,0
+talking to,1,talking to,,0
+travels through,1,travels through,,0
+behind an,1,behind an,,0
+among,1,among,,0
+low to,1,low to,,0
+used as base of,1,used as base of,,0
+leaning on,1,leaning on,,0
+stuck,1,stuck,,0
+standing to left of,1,standing to left of,,0
+standing behind,1,standing behind,,0
+laying down behind,1,laying down behind,,0
+of top,1,of top,,0
+on a persons,1,on a persons,,0
+to hold up an,1,to hold up an,,0
+reflecting on,1,reflecting on,,0
+sitting beside,1,sitting beside,,0
+connecting,1,connecting,,0
+cast by,1,cast by,,0
+looking through,1,looking through,,0
+walking into,1,walking into,,0
+to a,1,to a,,0
+going toward,1,going toward,,0
+leaned against,1,leaned against,,0
+parked against a,1,parked against a,,0
+gathering at,1,gathering at,,0
+leading up to,1,leading up to,,0
+lying in,1,lying in,,0
+laying down in,1,laying down in,,0
+near boat,1,near boat,,0
+at front of,1,at front of,,0
+are filled with,1,are filled with,,0
+batting at,1,batting at,,0
+appears shorter than,1,appears shorter than,,0
+at bottom of a,1,at bottom of a,,0
+painted on side of,1,painted on side of,,0
+who,1,who,,0
+with an,1,with an,,0
+that are,1,that are,,0
+of tree in,1,of tree in,,0
+of black,1,of black,,0
+horse,1,horse,,0
+on wrist of,1,on wrist of,,0
+in hands of,1,in hands of,,0
+in h,1,in h,,0
+pulling a,1,pulling a,,0
+sharing an,1,sharing an,,0
+removed from,1,removed from,,0
+made of concrete,1,made of concrete,,0
+made,1,made,,0
+posing,1,posing,,0
+lying on top of,1,lying on top of,,0
+focused on,1,focused on,,0
+lies with,1,lies with,,0
+running down,1,running down,,0
+clutching,1,clutching,,0
+laughing at,1,laughing at,,0
+bolted to,1,bolted to,,0
+in womans,1,in womans,,0
+are under,1,are under,,0
+with spiked,1,with spiked,,0
+has spiked,1,has spiked,,0
+has red,1,has red,,0
+up to her,1,up to her,,0
+wearing a black,1,wearing a black,,0
+carried by,1,carried by,,0
+wearing rubber,1,wearing rubber,,0
+extending from,1,extending from,,0
+ae,1,ae,,0
+mounting,1,mounting,,0
+mounted by,1,mounted by,,0
+on back,1,on back,,0
+growing on a,1,growing on a,,0
+taken at,1,taken at,,0
+waiting for,1,waiting for,,0
+parked off,1,parked off,,0
+on side or,1,on side or,,0
+standing on side of,1,standing on side of,,0
+grazing on,1,grazing on,,0
+standing together,1,standing together,,0
+stands by a,1,stands by a,,0
+by a,1,by a,,0
+sticks out of,1,sticks out of,,0
+planted near,1,planted near,,0
+has some,1,has some,,0
+fronting,1,fronting,,0
+aside,1,aside,,0
+fronting of,1,fronting of,,0
+on front,1,on front,,0
+standing beside,1,standing beside,,0
+by side,1,by side,,0
+wait for,1,wait for,,0
+hangs above,1,hangs above,,0
+parked next to,1,parked next to,,0
+pulled by,1,pulled by,,0
+coming from,1,coming from,,0
+taking picture with,1,taking picture with,,0
+holding side of,1,holding side of,,0
+pressing,1,pressing,,0
+traveling under,1,traveling under,,0
+planted along,1,planted along,,0
+on top of of,1,on top of of,,0
+growing along a,1,growing along a,,0
+parked by,1,parked by,,0
+wrapped in,1,wrapped in,,0
+pointing to,1,pointing to,,0
+pictured in,1,pictured in,,0
+in relief on,1,in relief on,,0
+numbers,1,numbers,,0
+to open,1,to open,,0
+spread on,1,spread on,,0
+wearing an,1,wearing an,,0
+resting,1,resting,,0
+runs on,1,runs on,,0
+tossing,1,tossing,,0
+waiting on,1,waiting on,,0
+lunging in,1,lunging in,,0
+back of,1,back of,,0
+observing,1,observing,,0
+intrigued by,1,intrigued by,,0
+looking down at,1,looking down at,,0
+on counter,1,on counter,,0
+going down,1,going down,,0
+hanging across,1,hanging across,,0
+sticking out of,1,sticking out of,,0
+clipped to,1,clipped to,,0
+wearing dress,1,wearing dress,,0
+window,1,window,,0
+clipped,1,clipped,,0
+bottle,1,bottle,,0
+system sticker,1,system sticker,,0
+ice,1,ice,,0
+open,1,open,,0
+lifting,1,lifting,,0
+growing by,1,growing by,,0
+boarding,1,boarding,,0
+loading,1,loading,,0
+waiting to board,1,waiting to board,,0
+held,1,held,,0
+connected to,1,connected to,,0
+in bottom of,1,in bottom of,,0
+has first,1,has first,,0
+sculpted into,1,sculpted into,,0
+standing on top of,1,standing on top of,,0
+sculpted on,1,sculpted on,,0
+raising,1,raising,,0
+running along side of,1,running along side of,,0
+run along side of,1,run along side of,,0
+of back of,1,of back of,,0
+turning,1,turning,,0
+in a red,1,in a red,,0
+in black skiing down,1,in black skiing down,,0
+skiing down a,1,skiing down a,,0
+shining through,1,shining through,,0
+pushing,1,pushing,,0
+laid on,1,laid on,,0
+swimming in,1,swimming in,,0
+out of,1,out of,,0
+looking,1,looking,,0
+block,1,block,,0
+walking on dirt,1,walking on dirt,,0
+metal poles with,1,metal poles with,,0
+panel of,1,panel of,,0
+of chain,1,of chain,,0
+sticking off,1,sticking off,,0
+reclined on,1,reclined on,,0
+on bended,1,on bended,,0
+that fell off of,1,that fell off of,,0
+going into,1,going into,,0
+in field of,1,in field of,,0
+being pulled by,1,being pulled by,,0
+being pulled by a,1,being pulled by a,,0
+are being,1,are being,,0
+right of,1,right of,rightOf,1
+looking for,1,looking for,,0
+displays,1,displays,,0
+hanging on side of,1,hanging on side of,,0
+on or side of,1,on or side of,,0
+has blonde,1,has blonde,,0
+standing outside,1,standing outside,,0
+cross,1,cross,,0
+light up,1,light up,,0
+standing along,1,standing along,,0
+masts,1,masts,,0
+skiiing on,1,skiiing on,,0
+following,1,following,,0
+by side of,1,by side of,,0
+walking beside,1,walking beside,,0
+grazing,1,grazing,,0
+swung by,1,swung by,,0
+being pulled down,1,being pulled down,,0
+are beneath,1,are beneath,,0
+attached to a,1,attached to a,,0
+has a metal,1,has a metal,,0
+connected to a,1,connected to a,,0
+hanging on a,1,hanging on a,,0
+parked beside,1,parked beside,,0
+in reflection of,1,in reflection of,,0
+lifting into,1,lifting into,,0
+on other side,1,on other side,,0
+imprinted in,1,imprinted in,,0
+has few,1,has few,,0
+stabbing,1,stabbing,,0
+at bottom of,1,at bottom of,,0
+form,1,form,,0
+jumping,1,jumping,,0
+levitating on,1,levitating on,,0
+flashing on,1,flashing on,,0
+wielding,1,wielding,,0
+using a,1,using a,,0
+down a,1,down a,,0
+casts,1,casts,,0
+off,1,off,,0
+visible between,1,visible between,,0
+of an airplane in th,1,of an airplane in th,,0
+near orange,1,near orange,,0
+traveling in,1,traveling in,,0
+ledge,1,ledge,,0
+stroking a,1,stroking a,,0
+stroking,1,stroking,,0
+perched in,1,perched in,,0
+being,1,being,,0
+alongside,1,alongside,,0
+growing up a,1,growing up a,,0
+and a,1,and a,,0
+up side of a,1,up side of a,,0
+hanging across a,1,hanging across a,,0
+leads to,1,leads to,,0
+enters,1,enters,,0
+and unloads,1,and unloads,,0
+parked very close to,1,parked very close to,,0
+on lawn behind,1,on lawn behind,,0
+link,1,link,,0
+in batters,1,in batters,,0
+wearing a blue baseball,1,wearing a blue baseball,,0
+crouching behind,1,crouching behind,,0
+wearing black protective catchers,1,wearing black protective catchers,,0
+batting in ball,1,batting in ball,,0
+held by young girl ball,1,held by young girl ball,,0
+in air near,1,in air near,,0
+catcher attempting to catch,1,catcher attempting to catch,,0
+plate umpire in,1,plate umpire in,,0
+near ball,1,near ball,,0
+on young girl,1,on young girl,,0
+red folding,1,red folding,,0
+girl wearing protective,1,girl wearing protective,,0
+catcher trying to catch,1,catcher trying to catch,,0
+with hands,1,with hands,,0
+trying to catch,1,trying to catch,,0
+preparing to hit,1,preparing to hit,,0
+sitting on other side of,1,sitting on other side of,,0
+walking from,1,walking from,,0
+are sitting in,1,are sitting in,,0
+driven on,1,driven on,,0
+pitched at,1,pitched at,,0
+siting in,1,siting in,,0
+watching over,1,watching over,,0
+reflected with,1,reflected with,,0
+sitting by,1,sitting by,,0
+tickling,1,tickling,,0
+after,1,after,,0
+gum,1,gum,,0
+sewer,1,sewer,,0
+b,1,b,,0
+for a,1,for a,,0
+streaming in,1,streaming in,,0
+alone in,1,alone in,,0
+mounted in,1,mounted in,,0
+ordered,1,ordered,,0
+looks at,1,looks at,,0
+entering,1,entering,,0
+points at,1,points at,,0
+extends,1,extends,,0
+sitting near,1,sitting near,,0
+flies in,1,flies in,,0
+placed on,1,placed on,,0
+cut into,1,cut into,,0
+black,1,black,,0
+silhouettes,1,silhouettes,,0
+jacket,1,jacket,,0
+roof,1,roof,,0
+down,1,down,,0
+snow,1,snow,,0
+trail,1,trail,,0
+on inside of,1,on inside of,,0
+drying,1,drying,,0
+hanging off of,1,hanging off of,,0
+are enjoying,1,are enjoying,,0
+playing in,1,playing in,,0
+taken,1,taken,,0
+riding on back of,1,riding on back of,,0
+being used on,1,being used on,,0
+sitting off,1,sitting off,,0
+skateboarding on,1,skateboarding on,,0
+separated on,1,separated on,,0
+growing in,1,growing in,,0
+i,1,i,,0
+and white,1,and white,,0
+stone,1,stone,,0
+fence of,1,fence of,,0
+tall,1,tall,,0
+fence near,1,fence near,,0
+has leafless,1,has leafless,,0
+has long,1,has long,,0
+casting,1,casting,,0
+that holds,1,that holds,,0
+enjoying,1,enjoying,,0
+participating in,1,participating in,,0
+going different from,1,going different from,,0
+bare,1,bare,,0
+hair,1,hair,,0
+covers,1,covers,,0
+contrast,1,contrast,,0
+during,1,during,,0
+into,1,into,,0
+holding and,1,holding and,,0
+surround,1,surround,,0
+hanging under,1,hanging under,,0
+watches,1,watches,,0
+separates,1,separates,,0
+of snow on a mountain,1,of snow on a mountain,,0
+to right of,1,to right of,,0
+right,1,right,,0
+left,1,left,,0
+black right,1,black right,,0
+hair escaping,1,hair escaping,,0
+showing through,1,showing through,,0
+pausing,1,pausing,,0
+peeking,1,peeking,,0
+poked,1,poked,,0
+atop,1,atop,,0
+coated by,1,coated by,,0
+apart from,1,apart from,,0
+together with,1,together with,,0
+drinking,1,drinking,,0
+brushing,1,brushing,,0
+gripping,1,gripping,,0
+melted on a,1,melted on a,,0

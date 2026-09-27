@@ -1,0 +1,81 @@
+detector_label,ontology_concepts,ontology_mapped
+person,Person,1
+bicycle,Bicycle,1
+car,Car,1
+motorcycle,Motorcycle,1
+airplane,Airplane,1
+bus,Bus,1
+train,Train,1
+truck,Truck,1
+boat,Boat,1
+traffic light,__exact__:traffic light,0
+fire hydrant,__exact__:fire hydrant,0
+stop sign,__exact__:stop sign,0
+parking meter,__exact__:parking meter,0
+bench,Bench,1
+bird,Bird,1
+cat,Cat,1
+dog,Dog,1
+horse,Horse,1
+sheep,Sheep,1
+cow,Cow,1
+elephant,Elephant,1
+bear,Bear,1
+zebra,Zebra,1
+giraffe,Giraffe,1
+backpack,Backpack,1
+umbrella,Umbrella,1
+handbag,Handbag,1
+tie,Tie,1
+suitcase,Suitcase,1
+frisbee,Frisbee,1
+skis,Skis,1
+snowboard,Snowboard,1
+sports ball,__exact__:sports ball,0
+kite,Kite,1
+baseball bat,__exact__:baseball bat,0
+baseball glove,__exact__:baseball glove,0
+skateboard,Skateboard,1
+surfboard,Surfboard,1
+tennis racket,__exact__:tennis racket,0
+bottle,Bottle,1
+wine glass,__exact__:wine glass,0
+cup,Cup,1
+fork,Fork,1
+knife,Knife,1
+spoon,Spoon,1
+bowl,Bowl,1
+banana,Banana,1
+apple,Apple,1
+sandwich,Sandwich,1
+orange,Orange,1
+broccoli,Broccoli,1
+carrot,Carrot,1
+hot dog,__exact__:hot dog,0
+pizza,Pizza,1
+donut,Donut,1
+cake,Cake,1
+chair,Chair,1
+couch,Couch,1
+potted plant,__exact__:potted plant,0
+bed,Bed,1
+dining table,__exact__:dining table,0
+toilet,Toilet,1
+tv,__exact__:tv,0
+laptop,Laptop,1
+mouse,Mouse,1
+remote,Remote,1
+keyboard,Keyboard,1
+cell phone,__exact__:cell phone,0
+microwave,Microwave,1
+oven,Oven,1
+toaster,Toaster,1
+sink,__exact__:sink,0
+refrigerator,Refrigerator,1
+book,Book,1
+clock,Clock,1
+vase,Vase,1
+scissors,Scissors,1
+teddy bear,__exact__:teddy bear,0
+hair drier,__exact__:hair drier,0
+toothbrush,__exact__:toothbrush,0
