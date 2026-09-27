@@ -1,0 +1,67 @@
+{
+  "experiment": "JOCO dense-scene solver stress test",
+  "sizes": [
+    20,
+    40,
+    60
+  ],
+  "seeds": [
+    42,
+    123,
+    2025
+  ],
+  "cbc_time_limit_s": 10,
+  "cbc_gap_rel": 0.0001,
+  "alpha": 0.4,
+  "beta": 0.3,
+  "gamma": 0.2,
+  "lambda_conflict": 0.0,
+  "relation_density": 0.15,
+  "results": [
+    {
+      "n_objects": 20,
+      "runs": 3,
+      "binary_variables_mean": 122.33333333333333,
+      "binary_variables_std": 6.110100926607786,
+      "constraints_mean": 208.0,
+      "constraints_std": 18.33030277982336,
+      "solver_time_mean_s": 0.1370547843333346,
+      "solver_time_std_s": 0.2041707814592116,
+      "end_to_end_mean_s": 0.13742566166664952,
+      "end_to_end_std_s": 0.20412706834302138,
+      "fallback_count": 0,
+      "selected_relations_mean": 40.0,
+      "fallback_frequency": 0.0
+    },
+    {
+      "n_objects": 40,
+      "runs": 3,
+      "binary_variables_mean": 361.0,
+      "binary_variables_std": 10.816653826391969,
+      "constraints_mean": 764.0,
+      "constraints_std": 32.449961479175904,
+      "solver_time_mean_s": 0.04398023399998389,
+      "solver_time_std_s": 0.0017876524799522672,
+      "end_to_end_mean_s": 0.04509357866665672,
+      "end_to_end_std_s": 0.0019501673428127635,
+      "fallback_count": 0,
+      "selected_relations_mean": 80.0,
+      "fallback_frequency": 0.0
+    },
+    {
+      "n_objects": 60,
+      "runs": 3,
+      "binary_variables_mean": 713.3333333333334,
+      "binary_variables_std": 18.147543451754917,
+      "constraints_mean": 1661.0,
+      "constraints_std": 54.4426303552648,
+      "solver_time_mean_s": 0.09073385133331158,
+      "solver_time_std_s": 0.002160707250724224,
+      "end_to_end_mean_s": 0.09263923533328959,
+      "end_to_end_std_s": 0.0020757667582812184,
+      "fallback_count": 0,
+      "selected_relations_mean": 120.0,
+      "fallback_frequency": 0.0
+    }
+  ]
+}
