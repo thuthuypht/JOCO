@@ -1,0 +1,4 @@
+dataset,n_images,raw_gt_boxes,eligible_gt_boxes,raw_gt_relations,eligible_gt_relations,detector_micro_f1,local_micro_f1,ocosl_micro_f1,rel_enriched_micro_f1,avg_solver_time_s,median_solver_time_s,fallback_count,violations_total,constraint_compliance_pct,images_with_no_detections,traceability_mean_all_images_pct,traceability_nonempty_images_pct
+COCO,500,3505,3505,0,0,0.5737051792828686,0.5737051792828686,0.5737051792828686,0.0,0.010444124295999307,0.0072907720000330006,0,0,100.0,10,98.0,100.0
+Open Images,300,5523,402,867,2,0.2221012520413718,0.2221012520413718,0.2221012520413718,0.0,0.008789092333336107,0.00659537599995015,0,0,100.0,7,97.66666666666667,100.0
+Visual Genome,400,9597,578,8797,18,0.2680722891566265,0.2680722891566265,0.2680722891566265,0.0,0.010103838599998718,0.0075329269999428496,0,0,100.0,10,97.5,100.0

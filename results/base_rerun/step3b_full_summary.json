@@ -1,0 +1,211 @@
+{
+  "experiment": "JOCO Step 3B corrected full base rerun",
+  "configuration": {
+    "alpha": 0.4,
+    "beta": 0.3,
+    "gamma": 0.2,
+    "lambda_conflict": 0.0,
+    "tau_rel": 0.7,
+    "duplicate_iou": 0.6,
+    "det_conf": 0.25,
+    "topk": 3,
+    "time_limit_s": 10,
+    "gapRel": 0.0001,
+    "eval_iou": 0.5,
+    "object_protocol": "VG/OI restricted to detector-compatible GT classes from Step 3A.1",
+    "base_relation_protocol": "geometry-expressible predicates + detector-compatible GT endpoints",
+    "reltr_v3_protocol": "unchanged; all 867 OI relations retained"
+  },
+  "datasets": {
+    "COCO": {
+      "n_completed": 500,
+      "raw_gt_boxes": 3505,
+      "eligible_gt_boxes": 3505,
+      "raw_gt_relations": 0,
+      "eligible_gt_relations": 0,
+      "detector_micro": {
+        "TP": 1728,
+        "FP": 791,
+        "FN": 1777,
+        "Precision": 0.6859865025803891,
+        "Recall": 0.49300998573466476,
+        "F1": 0.5737051792828686
+      },
+      "local_micro": {
+        "TP": 1728,
+        "FP": 791,
+        "FN": 1777,
+        "Precision": 0.6859865025803891,
+        "Recall": 0.49300998573466476,
+        "F1": 0.5737051792828686
+      },
+      "ocosl_micro": {
+        "TP": 1728,
+        "FP": 791,
+        "FN": 1777,
+        "Precision": 0.6859865025803891,
+        "Recall": 0.49300998573466476,
+        "F1": 0.5737051792828686
+      },
+      "relation_raw_micro": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "relation_enriched_micro": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "detector_mean_miou": 0.8310534639571127,
+      "local_mean_miou": 0.8310534639571127,
+      "ocosl_mean_miou": 0.8310534639571127,
+      "avg_binary_variables": 83.976,
+      "avg_constraints": 46.076,
+      "avg_solver_time_s": 0.010444124295999307,
+      "median_solver_time_s": 0.0072907720000330006,
+      "avg_end_to_end_time_s": 0.026472952087999553,
+      "median_end_to_end_time_s": 0.0219929959999944,
+      "fallback_count": 0,
+      "violations_total": 0,
+      "violations_per_image": 0.0,
+      "avg_constraint_compliance_pct": 100.0,
+      "avg_traceability_rate_pct": 98.0,
+      "avg_explanation_completeness_pct": 98.0,
+      "avg_evidence_items_per_assertion": 1.96
+    },
+    "Open Images": {
+      "n_completed": 300,
+      "raw_gt_boxes": 5523,
+      "eligible_gt_boxes": 402,
+      "raw_gt_relations": 867,
+      "eligible_gt_relations": 2,
+      "detector_micro": {
+        "TP": 204,
+        "FP": 1231,
+        "FN": 198,
+        "Precision": 0.1421602787456446,
+        "Recall": 0.5074626865671642,
+        "F1": 0.2221012520413718
+      },
+      "local_micro": {
+        "TP": 204,
+        "FP": 1231,
+        "FN": 198,
+        "Precision": 0.1421602787456446,
+        "Recall": 0.5074626865671642,
+        "F1": 0.2221012520413718
+      },
+      "ocosl_micro": {
+        "TP": 204,
+        "FP": 1231,
+        "FN": 198,
+        "Precision": 0.1421602787456446,
+        "Recall": 0.5074626865671642,
+        "F1": 0.2221012520413718
+      },
+      "relation_raw_micro": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 2,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "relation_enriched_micro": {
+        "TP": 0,
+        "FP": 2,
+        "FN": 2,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "detector_mean_miou": 0.3404528549027098,
+      "local_mean_miou": 0.3404528549027098,
+      "ocosl_mean_miou": 0.3404528549027098,
+      "avg_binary_variables": 81.95333333333333,
+      "avg_constraints": 45.50333333333333,
+      "avg_solver_time_s": 0.008789092333336107,
+      "median_solver_time_s": 0.00659537599995015,
+      "avg_end_to_end_time_s": 0.02808007637000055,
+      "median_end_to_end_time_s": 0.0258709794999845,
+      "fallback_count": 0,
+      "violations_total": 0,
+      "violations_per_image": 0.0,
+      "avg_constraint_compliance_pct": 100.0,
+      "avg_traceability_rate_pct": 97.66666666666667,
+      "avg_explanation_completeness_pct": 97.66666666666667,
+      "avg_evidence_items_per_assertion": 1.9533333333333334
+    },
+    "Visual Genome": {
+      "n_completed": 400,
+      "raw_gt_boxes": 9597,
+      "eligible_gt_boxes": 578,
+      "raw_gt_relations": 8797,
+      "eligible_gt_relations": 18,
+      "detector_micro": {
+        "TP": 356,
+        "FP": 1722,
+        "FN": 222,
+        "Precision": 0.17131857555341676,
+        "Recall": 0.615916955017301,
+        "F1": 0.2680722891566265
+      },
+      "local_micro": {
+        "TP": 356,
+        "FP": 1722,
+        "FN": 222,
+        "Precision": 0.17131857555341676,
+        "Recall": 0.615916955017301,
+        "F1": 0.2680722891566265
+      },
+      "ocosl_micro": {
+        "TP": 356,
+        "FP": 1722,
+        "FN": 222,
+        "Precision": 0.17131857555341676,
+        "Recall": 0.615916955017301,
+        "F1": 0.2680722891566265
+      },
+      "relation_raw_micro": {
+        "TP": 0,
+        "FP": 14,
+        "FN": 18,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "relation_enriched_micro": {
+        "TP": 0,
+        "FP": 20,
+        "FN": 18,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "detector_mean_miou": 0.43944633437136604,
+      "local_mean_miou": 0.43944633437136604,
+      "ocosl_mean_miou": 0.43944633437136604,
+      "avg_binary_variables": 98.4275,
+      "avg_constraints": 54.1875,
+      "avg_solver_time_s": 0.010103838599998718,
+      "median_solver_time_s": 0.0075329269999428496,
+      "avg_end_to_end_time_s": 0.025424032754999742,
+      "median_end_to_end_time_s": 0.02192179000002165,
+      "fallback_count": 0,
+      "violations_total": 0,
+      "violations_per_image": 0.0,
+      "avg_constraint_compliance_pct": 100.0,
+      "avg_traceability_rate_pct": 97.5,
+      "avg_explanation_completeness_pct": 97.5,
+      "avg_evidence_items_per_assertion": 1.95
+    }
+  },
+  "error_count": 0
+}
