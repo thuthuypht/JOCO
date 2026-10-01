@@ -1,0 +1,350 @@
+{
+  "experiment": "JOCO Step 5B full pairwise CRF baseline + statistics",
+  "n_rows": 1200,
+  "expected_rows": 1200,
+  "error_count": 0,
+  "statistics": {
+    "bootstrap_samples": 5000,
+    "paired_permutations": 20000,
+    "bootstrap_quantity": "mean per-image metric, not micro metric",
+    "paired_test": "two-sided paired sign-flip permutation test",
+    "seed": 42
+  },
+  "datasets": [
+    {
+      "dataset": "COCO",
+      "n_images": 500,
+      "eligible_relation_images": 0,
+      "ocosl_label_micro": {
+        "TP": 1728,
+        "FP": 791,
+        "FN": 1777,
+        "Precision": 0.6859865025803891,
+        "Recall": 0.49300998573466476,
+        "F1": 0.5737051792828686
+      },
+      "crf_label_micro": {
+        "TP": 1728,
+        "FP": 791,
+        "FN": 1777,
+        "Precision": 0.6859865025803891,
+        "Recall": 0.49300998573466476,
+        "F1": 0.5737051792828686
+      },
+      "ocosl_relation_micro": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "crf_relation_micro": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "ocosl_label_uncertainty": {
+        "precision": {
+          "mean_per_image": 0.7089663366968354,
+          "ci95_mean_per_image": [
+            0.6836478464736456,
+            0.7353377120306164
+          ]
+        },
+        "recall": {
+          "mean_per_image": 0.6106697154829199,
+          "ci95_mean_per_image": [
+            0.5823881079378844,
+            0.6380735086317959
+          ]
+        },
+        "f1": {
+          "mean_per_image": 0.6237852466452617,
+          "ci95_mean_per_image": [
+            0.5996223498068194,
+            0.6483006592433475
+          ]
+        },
+        "miou": {
+          "mean_per_image": 0.8310534639571127,
+          "ci95_mean_per_image": [
+            0.8137384255152262,
+            0.8471609716071062
+          ]
+        }
+      },
+      "crf_label_uncertainty": {
+        "precision": {
+          "mean_per_image": 0.7089663366968354,
+          "ci95_mean_per_image": [
+            0.6836478464736456,
+            0.7353377120306164
+          ]
+        },
+        "recall": {
+          "mean_per_image": 0.6106697154829199,
+          "ci95_mean_per_image": [
+            0.5823881079378844,
+            0.6380735086317959
+          ]
+        },
+        "f1": {
+          "mean_per_image": 0.6237852466452617,
+          "ci95_mean_per_image": [
+            0.5996223498068194,
+            0.6483006592433475
+          ]
+        },
+        "miou": {
+          "mean_per_image": 0.8310534639571127,
+          "ci95_mean_per_image": [
+            0.8137384255152262,
+            0.8471609716071062
+          ]
+        }
+      },
+      "mean_crf_time_s": 0.00020962744400728706,
+      "median_crf_time_s": 8.233550011027546e-05,
+      "crf_violations_total": 0,
+      "mean_crf_constraint_compliance_pct": 100.0,
+      "label_f1_mean_effect_crf_minus_ocosl": 0.0,
+      "label_f1_paired_permutation_p": 1.0,
+      "relation_f1_mean_effect_crf_minus_ocosl": null,
+      "relation_f1_paired_permutation_p": null
+    },
+    {
+      "dataset": "Open Images",
+      "n_images": 300,
+      "eligible_relation_images": 1,
+      "ocosl_label_micro": {
+        "TP": 204,
+        "FP": 1231,
+        "FN": 198,
+        "Precision": 0.1421602787456446,
+        "Recall": 0.5074626865671642,
+        "F1": 0.2221012520413718
+      },
+      "crf_label_micro": {
+        "TP": 204,
+        "FP": 1231,
+        "FN": 198,
+        "Precision": 0.1421602787456446,
+        "Recall": 0.5074626865671642,
+        "F1": 0.2221012520413718
+      },
+      "ocosl_relation_micro": {
+        "TP": 0,
+        "FP": 2,
+        "FN": 2,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "crf_relation_micro": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 2,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "ocosl_label_uncertainty": {
+        "precision": {
+          "mean_per_image": 0.12324615521736774,
+          "ci95_mean_per_image": [
+            0.10142674868662847,
+            0.14585179027918208
+          ]
+        },
+        "recall": {
+          "mean_per_image": 0.28583516886163945,
+          "ci95_mean_per_image": [
+            0.2406890609472227,
+            0.33333619388781144
+          ]
+        },
+        "f1": {
+          "mean_per_image": 0.15857553333361318,
+          "ci95_mean_per_image": [
+            0.13189865806560339,
+            0.18624097798820374
+          ]
+        },
+        "miou": {
+          "mean_per_image": 0.3404528549027098,
+          "ci95_mean_per_image": [
+            0.2931733721351909,
+            0.38801126876119024
+          ]
+        }
+      },
+      "crf_label_uncertainty": {
+        "precision": {
+          "mean_per_image": 0.12324615521736774,
+          "ci95_mean_per_image": [
+            0.10142674868662847,
+            0.14585179027918208
+          ]
+        },
+        "recall": {
+          "mean_per_image": 0.28583516886163945,
+          "ci95_mean_per_image": [
+            0.2406890609472227,
+            0.33333619388781144
+          ]
+        },
+        "f1": {
+          "mean_per_image": 0.15857553333361318,
+          "ci95_mean_per_image": [
+            0.13189865806560339,
+            0.18624097798820374
+          ]
+        },
+        "miou": {
+          "mean_per_image": 0.3404528549027098,
+          "ci95_mean_per_image": [
+            0.2931733721351909,
+            0.38801126876119024
+          ]
+        }
+      },
+      "mean_crf_time_s": 0.00022810845333270704,
+      "median_crf_time_s": 7.282549995579757e-05,
+      "crf_violations_total": 0,
+      "mean_crf_constraint_compliance_pct": 100.0,
+      "label_f1_mean_effect_crf_minus_ocosl": 0.0,
+      "label_f1_paired_permutation_p": 1.0,
+      "relation_f1_mean_effect_crf_minus_ocosl": 0.0,
+      "relation_f1_paired_permutation_p": 1.0,
+      "ocosl_relation_f1_mean_per_eligible_image": 0.0,
+      "crf_relation_f1_mean_per_eligible_image": 0.0,
+      "ocosl_relation_f1_ci95_mean_per_eligible_image": [
+        0.0,
+        0.0
+      ],
+      "crf_relation_f1_ci95_mean_per_eligible_image": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Visual Genome",
+      "n_images": 400,
+      "eligible_relation_images": 14,
+      "ocosl_label_micro": {
+        "TP": 356,
+        "FP": 1722,
+        "FN": 222,
+        "Precision": 0.17131857555341676,
+        "Recall": 0.615916955017301,
+        "F1": 0.2680722891566265
+      },
+      "crf_label_micro": {
+        "TP": 356,
+        "FP": 1722,
+        "FN": 222,
+        "Precision": 0.17131857555341676,
+        "Recall": 0.615916955017301,
+        "F1": 0.2680722891566265
+      },
+      "ocosl_relation_micro": {
+        "TP": 0,
+        "FP": 20,
+        "FN": 18,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "crf_relation_micro": {
+        "TP": 0,
+        "FP": 42,
+        "FN": 18,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "ocosl_label_uncertainty": {
+        "precision": {
+          "mean_per_image": 0.2129297328972546,
+          "ci95_mean_per_image": [
+            0.1843755369173488,
+            0.24303020406376033
+          ]
+        },
+        "recall": {
+          "mean_per_image": 0.39903063949938944,
+          "ci95_mean_per_image": [
+            0.35648830605158727,
+            0.44232560477716715
+          ]
+        },
+        "f1": {
+          "mean_per_image": 0.2470150695036773,
+          "ci95_mean_per_image": [
+            0.21853751386788428,
+            0.2784210178623276
+          ]
+        },
+        "miou": {
+          "mean_per_image": 0.43944633437136604,
+          "ci95_mean_per_image": [
+            0.39958842773307407,
+            0.48134230065174505
+          ]
+        }
+      },
+      "crf_label_uncertainty": {
+        "precision": {
+          "mean_per_image": 0.2129297328972546,
+          "ci95_mean_per_image": [
+            0.1843755369173488,
+            0.24303020406376033
+          ]
+        },
+        "recall": {
+          "mean_per_image": 0.39903063949938944,
+          "ci95_mean_per_image": [
+            0.35648830605158727,
+            0.44232560477716715
+          ]
+        },
+        "f1": {
+          "mean_per_image": 0.2470150695036773,
+          "ci95_mean_per_image": [
+            0.21853751386788428,
+            0.2784210178623276
+          ]
+        },
+        "miou": {
+          "mean_per_image": 0.43944633437136604,
+          "ci95_mean_per_image": [
+            0.39958842773307407,
+            0.48134230065174505
+          ]
+        }
+      },
+      "mean_crf_time_s": 0.00023826478000953599,
+      "median_crf_time_s": 8.16109998140746e-05,
+      "crf_violations_total": 0,
+      "mean_crf_constraint_compliance_pct": 100.0,
+      "label_f1_mean_effect_crf_minus_ocosl": 0.0,
+      "label_f1_paired_permutation_p": 1.0,
+      "relation_f1_mean_effect_crf_minus_ocosl": 0.0,
+      "relation_f1_paired_permutation_p": 1.0,
+      "ocosl_relation_f1_mean_per_eligible_image": 0.0,
+      "crf_relation_f1_mean_per_eligible_image": 0.0,
+      "ocosl_relation_f1_ci95_mean_per_eligible_image": [
+        0.0,
+        0.0
+      ],
+      "crf_relation_f1_ci95_mean_per_eligible_image": [
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}
