@@ -1,0 +1,4 @@
+dataset,n_instances,objective_loss_mean_pct,objective_loss_median_pct,objective_loss_max_pct,reference_time_mean_s,fallback_time_mean_s,fallback_time_median_s,fallback_violations_total,fallback_compliance_mean_pct,components_mean
+COCO,10,0.0,0.0,0.0,0.0621595079999878,0.06028184489999262,0.03751748999999904,0,100.0,1.0
+Open Images,10,0.0,0.0,0.0,0.03685242130000006,0.03694388539999523,0.035106222000024445,0,100.0,1.0
+Visual Genome,10,0.0,0.0,0.0,0.048837607800004436,0.06666143469999497,0.0509187989999873,0,100.0,1.0

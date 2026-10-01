@@ -1,0 +1,64 @@
+{
+  "experiment": "JOCO forced fallback quality",
+  "selection": "10 largest Step-3B binary-variable instances per dataset",
+  "n_requested": 30,
+  "n_valid": 30,
+  "reference_solver": {
+    "time_limit_s": 60,
+    "gapRel": 1e-06
+  },
+  "forced_fallback": {
+    "normal_time_limit_s": 10,
+    "gapRel": 0.0001
+  },
+  "overall": {
+    "objective_loss_mean_pct": 0.0,
+    "objective_loss_median_pct": 0.0,
+    "objective_loss_max_pct": 0.0,
+    "reference_time_mean_s": 0.049283179033330765,
+    "fallback_time_mean_s": 0.05462905499999427,
+    "fallback_violations_total": 0,
+    "fallback_compliance_mean_pct": 100.0
+  },
+  "by_dataset": [
+    {
+      "dataset": "COCO",
+      "n_instances": 10,
+      "objective_loss_mean_pct": 0.0,
+      "objective_loss_median_pct": 0.0,
+      "objective_loss_max_pct": 0.0,
+      "reference_time_mean_s": 0.0621595079999878,
+      "fallback_time_mean_s": 0.06028184489999262,
+      "fallback_time_median_s": 0.03751748999999904,
+      "fallback_violations_total": 0,
+      "fallback_compliance_mean_pct": 100.0,
+      "components_mean": 1.0
+    },
+    {
+      "dataset": "Open Images",
+      "n_instances": 10,
+      "objective_loss_mean_pct": 0.0,
+      "objective_loss_median_pct": 0.0,
+      "objective_loss_max_pct": 0.0,
+      "reference_time_mean_s": 0.03685242130000006,
+      "fallback_time_mean_s": 0.03694388539999523,
+      "fallback_time_median_s": 0.035106222000024445,
+      "fallback_violations_total": 0,
+      "fallback_compliance_mean_pct": 100.0,
+      "components_mean": 1.0
+    },
+    {
+      "dataset": "Visual Genome",
+      "n_instances": 10,
+      "objective_loss_mean_pct": 0.0,
+      "objective_loss_median_pct": 0.0,
+      "objective_loss_max_pct": 0.0,
+      "reference_time_mean_s": 0.048837607800004436,
+      "fallback_time_mean_s": 0.06666143469999497,
+      "fallback_time_median_s": 0.0509187989999873,
+      "fallback_violations_total": 0,
+      "fallback_compliance_mean_pct": 100.0,
+      "components_mean": 1.0
+    }
+  ]
+}
