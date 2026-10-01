@@ -1,0 +1,14 @@
+{
+  "n_instances_total": 60,
+  "n_objective_loss_cases": 57,
+  "n_zero_object_cases": 3,
+  "reference_status_optimal": 60,
+  "objective_loss_mean_pct": -1.555294669032518e-15,
+  "objective_loss_median_pct": 0.0,
+  "objective_loss_max_abs_pct": 4.484185808470753e-14,
+  "repair_time_mean_s": 0.000135282600016724,
+  "repair_time_median_s": 3.893050006809062e-05,
+  "repair_time_max_s": 0.001946529999941,
+  "repair_violations_total": 0,
+  "repair_compliance_mean_pct": 100.0
+}

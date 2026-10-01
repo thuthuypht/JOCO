@@ -1,0 +1,4 @@
+dataset,n_instances_total,n_objective_loss_cases,n_zero_object_cases,objective_loss_mean_pct,objective_loss_median_pct,objective_loss_max_abs_pct,repair_time_mean_s,repair_time_median_s,repair_violations_total,repair_compliance_mean_pct
+COCO,20,19,1,8.914945446660902e-16,0.0,1.7990109390715782e-14,0.00011512160001529316,3.847550010505074e-05,0,100.0
+Open Images,20,19,1,-3.121468014949428e-15,0.0,4.484185808470753e-14,0.00013416779999032635,3.9131500102485006e-05,0,100.0
+Visual Genome,20,19,1,-2.435910536814217e-15,0.0,1.7187483285434235e-14,0.00015655840004455242,3.979100006290537e-05,0,100.0

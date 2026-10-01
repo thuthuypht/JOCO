@@ -1,0 +1,4 @@
+dataset,fallback_count,timeout_cases,infeasible_pruning_cases,avg_objective_loss_pct,violations_after_repair,repair_time_s,total_time_per_fallback_case_s
+COCO (500),0,0,0,N/A,N/A,N/A,N/A
+Visual Genome (400),0,0,0,N/A,N/A,N/A,N/A
+Open Images (300),0,0,0,N/A,N/A,N/A,N/A
