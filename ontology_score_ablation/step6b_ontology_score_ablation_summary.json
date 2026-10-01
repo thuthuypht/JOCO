@@ -1,0 +1,210 @@
+{
+  "experiment": "JOCO Step 6B full ontology-score double-counting ablation",
+  "clean_score": "detector confidence excluded from s_onto; lexical/hierarchy/context normalized 5:3:1",
+  "legacy_score": "detector confidence included in s_onto with weights .55/.25/.15/.05",
+  "important_note": "Objective magnitudes are not directly comparable as performance because the two variants use different score definitions.",
+  "n_rows": 1200,
+  "expected_rows": 1200,
+  "error_count": 0,
+  "statistics": {
+    "bootstrap_samples": 5000,
+    "paired_permutations": 20000,
+    "bootstrap_quantity": "mean per-image F1",
+    "paired_test": "two-sided paired sign-flip permutation",
+    "seed": 42
+  },
+  "datasets": [
+    {
+      "dataset": "COCO",
+      "n_images": 500,
+      "clean_label_micro": {
+        "TP": 1728,
+        "FP": 791,
+        "FN": 1777,
+        "Precision": 0.6859865025803891,
+        "Recall": 0.49300998573466476,
+        "F1": 0.5737051792828686
+      },
+      "legacy_label_micro": {
+        "TP": 1728,
+        "FP": 791,
+        "FN": 1777,
+        "Precision": 0.6859865025803891,
+        "Recall": 0.49300998573466476,
+        "F1": 0.5737051792828686
+      },
+      "clean_relation_micro": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "legacy_relation_micro": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "clean_mean_per_image_f1": 0.6237852466452617,
+      "legacy_mean_per_image_f1": 0.6237852466452617,
+      "clean_f1_ci95_mean_per_image": [
+        0.5996223498068194,
+        0.6483006592433475
+      ],
+      "legacy_f1_ci95_mean_per_image": [
+        0.5996223498068194,
+        0.6483006592433475
+      ],
+      "mean_effect_legacy_minus_clean_f1": 0.0,
+      "paired_permutation_p_label_f1": 1.0,
+      "total_detected_objects": 2519,
+      "selected_label_changes": 0,
+      "images_with_label_changes": 0,
+      "selected_label_change_rate_per_detected_object": 0.0,
+      "selected_relation_symmetric_diff": 0,
+      "images_with_relation_changes": 0,
+      "clean_violations_total": 0,
+      "legacy_violations_total": 0,
+      "clean_fallback_count": 0,
+      "legacy_fallback_count": 0,
+      "clean_objective_mean": 4.1563566454908045,
+      "legacy_objective_mean": 3.907634655001473,
+      "eligible_relation_images": 0,
+      "clean_relation_mean_per_eligible_image_f1": null,
+      "legacy_relation_mean_per_eligible_image_f1": null,
+      "paired_permutation_p_relation_f1": null
+    },
+    {
+      "dataset": "Open Images",
+      "n_images": 300,
+      "clean_label_micro": {
+        "TP": 204,
+        "FP": 1231,
+        "FN": 198,
+        "Precision": 0.1421602787456446,
+        "Recall": 0.5074626865671642,
+        "F1": 0.2221012520413718
+      },
+      "legacy_label_micro": {
+        "TP": 204,
+        "FP": 1231,
+        "FN": 198,
+        "Precision": 0.1421602787456446,
+        "Recall": 0.5074626865671642,
+        "F1": 0.2221012520413718
+      },
+      "clean_relation_micro": {
+        "TP": 0,
+        "FP": 2,
+        "FN": 2,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "legacy_relation_micro": {
+        "TP": 0,
+        "FP": 2,
+        "FN": 2,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "clean_mean_per_image_f1": 0.15857553333361318,
+      "legacy_mean_per_image_f1": 0.15857553333361318,
+      "clean_f1_ci95_mean_per_image": [
+        0.13189865806560339,
+        0.18624097798820374
+      ],
+      "legacy_f1_ci95_mean_per_image": [
+        0.13189865806560339,
+        0.18624097798820374
+      ],
+      "mean_effect_legacy_minus_clean_f1": 0.0,
+      "paired_permutation_p_label_f1": 1.0,
+      "total_detected_objects": 1435,
+      "selected_label_changes": 0,
+      "images_with_label_changes": 0,
+      "selected_label_change_rate_per_detected_object": 0.0,
+      "selected_relation_symmetric_diff": 0,
+      "images_with_relation_changes": 0,
+      "clean_violations_total": 0,
+      "legacy_violations_total": 0,
+      "clean_fallback_count": 0,
+      "legacy_fallback_count": 0,
+      "clean_objective_mean": 3.958543443458179,
+      "legacy_objective_mean": 3.732148897153294,
+      "eligible_relation_images": 1,
+      "clean_relation_mean_per_eligible_image_f1": 0.0,
+      "legacy_relation_mean_per_eligible_image_f1": 0.0,
+      "paired_permutation_p_relation_f1": 1.0
+    },
+    {
+      "dataset": "Visual Genome",
+      "n_images": 400,
+      "clean_label_micro": {
+        "TP": 356,
+        "FP": 1722,
+        "FN": 222,
+        "Precision": 0.17131857555341676,
+        "Recall": 0.615916955017301,
+        "F1": 0.2680722891566265
+      },
+      "legacy_label_micro": {
+        "TP": 356,
+        "FP": 1722,
+        "FN": 222,
+        "Precision": 0.17131857555341676,
+        "Recall": 0.615916955017301,
+        "F1": 0.2680722891566265
+      },
+      "clean_relation_micro": {
+        "TP": 0,
+        "FP": 20,
+        "FN": 18,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "legacy_relation_micro": {
+        "TP": 0,
+        "FP": 20,
+        "FN": 18,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1": 0.0
+      },
+      "clean_mean_per_image_f1": 0.2470150695036773,
+      "legacy_mean_per_image_f1": 0.2470150695036773,
+      "clean_f1_ci95_mean_per_image": [
+        0.21853751386788428,
+        0.2784210178623276
+      ],
+      "legacy_f1_ci95_mean_per_image": [
+        0.21853751386788428,
+        0.2784210178623276
+      ],
+      "mean_effect_legacy_minus_clean_f1": 0.0,
+      "paired_permutation_p_label_f1": 1.0,
+      "total_detected_objects": 2078,
+      "selected_label_changes": 0,
+      "images_with_label_changes": 0,
+      "selected_label_change_rate_per_detected_object": 0.0,
+      "selected_relation_symmetric_diff": 0,
+      "images_with_relation_changes": 0,
+      "clean_violations_total": 0,
+      "legacy_violations_total": 0,
+      "clean_fallback_count": 0,
+      "legacy_fallback_count": 0,
+      "clean_objective_mean": 4.312756984721769,
+      "legacy_objective_mean": 4.058551045097088,
+      "eligible_relation_images": 14,
+      "clean_relation_mean_per_eligible_image_f1": 0.0,
+      "legacy_relation_mean_per_eligible_image_f1": 0.0,
+      "paired_permutation_p_relation_f1": 1.0
+    }
+  ]
+}
