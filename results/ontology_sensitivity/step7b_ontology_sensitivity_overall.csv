@@ -1,0 +1,7 @@
+condition,level,seeds,label_f1_mean,label_f1_std,relation_f1_mean,relation_f1_std,reference_violations_per_image_mean,reference_violations_per_image_std,reference_compliance_mean_pct,label_changes_mean,relation_changes_mean
+baseline,0.0,1,0.43510506798516685,,0.0,,0.0,,100.0,0.0,0.0
+erroneous,0.05,3,0.43510506798516685,0.0,0.0,0.0,0.0,0.0,100.0,0.0,3897.0
+erroneous,0.1,3,0.43510506798516685,0.0,0.0,0.0,0.0,0.0,100.0,0.0,2398.0
+missing,0.1,3,0.43510506798516685,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0
+missing,0.2,3,0.43510506798516685,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0
+missing,0.3,3,0.43510506798516685,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0

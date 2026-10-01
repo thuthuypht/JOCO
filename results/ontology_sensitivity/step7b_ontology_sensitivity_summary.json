@@ -1,0 +1,40 @@
+{
+  "experiment": "JOCO Step 7B full ontology-sensitivity experiment",
+  "datasets": {
+    "COCO": 500,
+    "Visual Genome": 400,
+    "Open Images": 300
+  },
+  "conditions": {
+    "baseline": [
+      0.0
+    ],
+    "missing": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "erroneous": [
+      0.05,
+      0.1
+    ]
+  },
+  "seeds": [
+    42,
+    123,
+    2025
+  ],
+  "rows": 19200,
+  "expected_rows": 19200,
+  "error_count": 0,
+  "protocol": {
+    "missing": "randomly remove the stated fraction from active label-to-ontology-type mappings and relation domain/range constraints",
+    "erroneous": "randomly replace the stated fraction of active label-to-ontology-type mappings and relation domain/range constraints with incorrect values",
+    "reference_diagnostics": "evaluate the selected solution against the unperturbed reference ontology/mapping",
+    "seeds": [
+      42,
+      123,
+      2025
+    ]
+  }
+}
