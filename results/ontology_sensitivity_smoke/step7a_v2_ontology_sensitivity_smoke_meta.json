@@ -1,0 +1,35 @@
+{
+  "experiment": "JOCO Step 7A V2 ontology-sensitivity smoke",
+  "datasets": {
+    "COCO": 3,
+    "Visual Genome": 3,
+    "Open Images": 3
+  },
+  "conditions": {
+    "baseline": [
+      0.0
+    ],
+    "missing": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "erroneous": [
+      0.05,
+      0.1
+    ]
+  },
+  "seeds": [
+    42,
+    123,
+    2025
+  ],
+  "important_protocol": {
+    "missing": "remove the specified fraction independently from active label-to-ontology-type mappings and relation domain/range constraints",
+    "erroneous": "replace the specified fraction of active label-to-ontology-type mappings and relation domain/range pairs with wrong values",
+    "diagnostic_violations": "selected solution is evaluated against the unperturbed reference ontology"
+  },
+  "rows": 144,
+  "expected_rows": 144,
+  "error_count": 0
+}
