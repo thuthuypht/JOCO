@@ -33,7 +33,28 @@ python run_oi300_reltr_ocosl_v3.py   --prepare-reltr   --output-dir /kaggle/work
 
 ## Base reported configuration
 
-See `configs/final_reported_config.yaml`. The revised manuscript reports, for the geometry-driven base experiments, top-k=3, detector threshold 0.25, relation threshold 0.70, duplicate IoU 0.60, relation budget C=2n, alpha=0.40, beta=0.30, gamma=0.20, lambda=0.10, and CBC time limit 10 s. The RelTR robustness experiment has its own explicitly separated settings in the same file.
+See `configs/final_reported_config.yaml`.
+
+For the geometry-driven base experiments, the frozen reported configuration is:
+
+- detector: `yolov8n.pt`
+- candidate-label cap: `k=3`
+- detector threshold: `tau_det=0.25`
+- duplicate suppression: same-label `IoU=0.60`
+- relation generator: geometry from `spatial_relations()`
+- relation threshold: `tau_rel=0.70`
+- relation budget: `C=2n`
+- objective weights: `alpha=0.40`, `beta=0.30`, `gamma=0.20`, `lambda=0.0`
+- conflict handling: hard feasibility constraints; **no additional soft conflict penalty**
+- ontology score: lexical + hierarchy/type + context, with detector confidence excluded from `s_onto`
+- domain/range compatibility: transitive `rdfs:subClassOf` closure
+- CBC time limit: `10 s`
+- CBC relative-gap tolerance: `1.0e-4`
+- fallback: connected-component decomposition + deterministic feasibility repair
+
+This block is synchronized with both `configs/final_reported_config.yaml` and the final solver implementation (`ocosl_run_final.py` and `src/ocosl_constraints_final.py`). In particular, the active base configuration uses `lambda_conflict = 0.0`.
+
+The RelTR robustness experiment has its own explicitly separated settings in the same YAML file.
 
 ## Important reproducibility status
 
